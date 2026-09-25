@@ -1,0 +1,19 @@
+---
+source: "chinh-thuc-cong-bo-ke-hoach-dang-ky-hoc-phan-hoc-ky-i-nam-hoc-20262027.json"
+title: "CHÍNH THỨC CÔNG BỐ KẾ HOẠCH ĐĂNG KÝ HỌC PHẦN HỌC KỲ I NĂM HỌC 2026–2027"
+doc_type: "news"
+url: "https://www.uit.edu.vn/bai-viet/chinh-thuc-cong-bo-ke-hoach-dang-ky-hoc-phan-hoc-ky-i-nam-hoc-20262027"
+date_crawled: "2026-09-23T15:18:14.650667"
+---
+
+# CHÍNH THỨC CÔNG BỐ KẾ HOẠCH ĐĂNG KÝ HỌC PHẦN HỌC KỲ I NĂM HỌC 2026–2027
+20/07/2026 - 16:28
+💙 UITers, đã đến lúc chuẩn bị cho học kỳ mới!
+Phòng Đào tạo Đại học chính thức công bố kế hoạch đăng ký học phần học kỳ I năm học 2026–2027. Hãy lưu lại ngay các mốc thời gian dưới đây để chủ động xây dựng kế hoạch học tập và đăng ký học phần đúng thời gian nhé!
+📅 Các mốc thời gian quan trọng🗓️ 21/08/2026: Công bố thời khóa biểu dự kiến.🗓️ 24–26/08/2026: Đăng ký học phần đợt 1 (chính thức).🗓️ 28–31/08/2026: Đăng ký học phần đợt 2 (điều chỉnh).🗓️ 07–12/09/2026: Đăng ký học phần đợt 3 (cứu xét).
+🎓 Học kỳ I năm học 2026–2027 sẽ chính thức bắt đầu từ ngày 07/09/2026.
+📌 Lưu ý✅ Sinh viên khóa tuyển sinh năm 2026 sẽ được Nhà trường gán thời khóa biểu theo kế hoạch đào tạo mẫu và không thực hiện đăng ký học phần trong học kỳ này.✅ Không đăng ký hộ, đăng ký giữ chỗ hoặc sử dụng các công cụ hỗ trợ đăng ký học phần tự động để đảm bảo công bằng cho tất cả sinh viên.
+📖 Kế hoạch và hướng dẫn chi tiết:👉 [https://daa.uit.edu.vn](https://daa.uit.edu.vn/)
+🔗 Xem thông báo đầy đủ tại:<https://daa.uit.edu.vn/thong-bao-ke-hoach-dkhp-hk1-nam-hoc-2026-2027>
+💙 Chủ động chuẩn bị từ sớm sẽ giúp bạn có một kế hoạch học tập hiệu quả và khởi đầu học kỳ mới thật thuận lợi. Chúc các UITers đăng ký học phần thành công!
+CHÍNH THỨC CÔNG BỐ KẾ HOẠCH ĐĂNG KÝ HỌC PHẦN HỌC KỲ I NĂM HỌC 2026–2027

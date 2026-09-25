@@ -1,0 +1,24 @@
+# Cấu hình Streamlit cho project này.
+
+[server]
+# Tắt file watcher. Streamlit duyệt __path__ của mọi module đã import để hot-reload;
+# transformers dùng lazy import nên việc duyệt này kích hoạt hàng trăm module xử lý
+# ảnh cần torchvision (paddleocr_vl, pixtral, sam, segformer...). Project chỉ dùng
+# transformers cho text embedding bge-m3 nên không cài torchvision, và mỗi lần khởi
+# động app sẽ đổ ra hàng trăm traceback ModuleNotFoundError vô hại nhưng che mất log thật.
+# Đánh đổi: sửa app.py phải tự bấm "Rerun" hoặc khởi động lại, không tự nạp lại nữa.
+fileWatcherType = "none"
+
+[browser]
+# Không gửi thống kê sử dụng, và không hỏi email ở lần chạy đầu trên máy mới.
+gatherUsageStats = false
+
+[theme]
+# Bảng màu lấy từ stylesheet của uit.edu.vn: xanh #1D4ED8 làm màu chính,
+# cam #F27A2A làm màu nhấn, nền sáng và nhiều khoảng trắng như trang thật.
+base = "light"
+primaryColor = "#1D4ED8"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F8FF"
+textColor = "#1E293B"
+font = "sans serif"

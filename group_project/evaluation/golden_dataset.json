@@ -1,0 +1,107 @@
+[
+  {
+    "question": "Theo Quy chế đào tạo theo học chế tín chỉ của Trường ĐHCNTT, một tín chỉ học tập được quy định bằng bao nhiêu tiết học lý thuyết?",
+    "expected_answer": "Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết.",
+    "expected_context": "Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+    "question_type": "keyword",
+    "source_document": "790-2022-quy-che-dao-tao-tin-chi.pdf"
+  },
+  {
+    "question": "Một tiết học được tính quy chuẩn bằng bao nhiêu phút?",
+    "expected_answer": "Một tiết học được tính quy chuẩn bằng 50 phút.",
+    "expected_context": "Một tiết học được tính quy chuẩn bằng 50 phút.",
+    "question_type": "keyword",
+    "source_document": "790-2022-quy-che-dao-tao-tin-chi.pdf"
+  },
+  {
+    "question": "Cán bộ ra đề thi phải soạn đề và đáp án theo thang điểm nào?",
+    "expected_answer": "Theo thang điểm 10, kèm các điểm chi tiết.",
+    "expected_context": "Đơn vị quản lý chuyên môn của môn học (Khoa/Bộ môn/Tổ phụ trách môn học) chịu trách nhiệm cử cán bộ ra đề thi và đáp án theo thang điểm 10 kèm các điểm chi tiết.",
+    "question_type": "keyword",
+    "source_document": "1139-2022-to-chuc-thi-tap-trung.pdf"
+  },
+  {
+    "question": "Bài thi được lưu trữ trong thời hạn bao lâu sau khi kết thúc đợt thi?",
+    "expected_answer": "Bài thi được bàn giao cho P.ĐTĐH trong thời hạn 05 tháng sau khi kết thúc đợt thi.",
+    "expected_context": "Khoa và các đơn vị liên quan có trách nhiệm bàn giao cho P.ĐTĐH hồ sơ của đợt thi ngay sau khi kết thúc đợt thi và bài thi trong thời hạn 05 tháng sau khi kết thúc đợt thi.",
+    "question_type": "keyword",
+    "source_document": "1139-2022-to-chuc-thi-tap-trung.pdf"
+  },
+  {
+    "question": "Sau khi nhận danh sách yêu cầu phúc khảo, Khoa phải cử cán bộ chấm phúc khảo trong vòng bao nhiêu ngày?",
+    "expected_answer": "Trong vòng 7 ngày.",
+    "expected_context": "Trong vòng 7 ngày, Khoa cử cán bộ chấm thi phúc khảo để xem xét lại bài thi và gửi kết quả phúc khảo cho P.ĐTĐH để cập nhật lại điểm trên Hệ thống quản lý điểm và công bố cho SV.",
+    "question_type": "keyword",
+    "source_document": "1139-2022-to-chuc-thi-tap-trung.pdf"
+  },
+  {
+    "question": "Sinh viên bị đuổi học trong những trường hợp nào?",
+    "expected_answer": "Sinh viên bị buộc thôi học nếu vi phạm một trong các trường hợp: ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0; đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại; đã hết thời gian tối đa hoàn thành khóa học nhưng chưa hoàn thành chương trình đào tạo; sau khi hết thời gian được cho thôi học; bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm; bị đình chỉ học tập lần thứ hai; vi phạm kỷ luật.",
+    "expected_context": "Sinh viên bị buộc thôi học nếu vi phạm một trong những trường hợp sau đây: - ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0. - Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại. - Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành chương trình đào tạo. - Sau khi hết thời gian được cho thôi học. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm. - Bị đình chỉ học tập lần thứ hai.",
+    "question_type": "semantic",
+    "source_document": "790-2022-quy-che-dao-tao-tin-chi.pdf"
+  },
+  {
+    "question": "Khi nào sinh viên bị nhắc nhở vì kết quả học tập kém?",
+    "expected_answer": "Sinh viên bị cảnh báo học vụ nếu không hoàn thành nghĩa vụ học phí đúng quy định, hoặc có ĐTBHK dưới 3,0, hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.",
+    "expected_context": "Sinh viên bị cảnh báo học vụ nếu vi phạm một trong những trường hợp sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0. Thời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo.",
+    "question_type": "semantic",
+    "source_document": "790-2022-quy-che-dao-tao-tin-chi.pdf"
+  },
+  {
+    "question": "Sinh viên được nghỉ học tạm thời tối đa bao lâu?",
+    "expected_answer": "Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, và được tính vào thời gian tối đa hoàn thành khóa học.",
+    "expected_context": "Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.",
+    "question_type": "semantic",
+    "source_document": "790-2022-quy-che-dao-tao-tin-chi.pdf"
+  },
+  {
+    "question": "Nếu sinh viên chưa đạt môn tiếng Anh sau hai học kỳ đầu thì bị hạn chế điều gì?",
+    "expected_answer": "Sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ, bao gồm cả đăng ký học lại hoặc cải thiện, cho đến khi đạt.",
+    "expected_context": "Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong CTĐT là môn học PET01 hoặc IEL01. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt.",
+    "question_type": "semantic",
+    "source_document": "956-2026-quy-che-dao-tao-ngoai-ngu.pdf"
+  },
+  {
+    "question": "Tài liệu học tập được số hóa dùng cho dạy học trực tuyến được gọi là gì?",
+    "expected_answer": "Được gọi là học liệu điện tử, trong đó video bài giảng là thành phần bắt buộc phải có.",
+    "expected_context": "Học liệu điện tử: là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính (văn bản, âm thanh, hình ảnh, video, đồ họa, …), được cấu trúc theo kịch bản dạy và học nhất định, có nội dung đáp ứng chuẩn đầu ra của một môn học. Video bài giảng là thành phần bắt buộc phải có của học liệu điện tử.",
+    "question_type": "semantic",
+    "source_document": "196-2023-day-hoc-truc-tuyen-ket-hop.pdf"
+  },
+  {
+    "question": "Mỗi năm Trường tổ chức bao nhiêu đợt bảo vệ khóa luận tốt nghiệp?",
+    "expected_answer": "Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường.",
+    "expected_context": "Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường và được công bố vào đầu mỗi năm học.",
+    "question_type": "confusable",
+    "source_document": "159-2024-quy-dinh-khoa-luan-tot-nghiep.pdf"
+  },
+  {
+    "question": "Khi cán bộ phản biện đánh giá khóa luận tốt nghiệp dưới 5 điểm thì Khoa xử lý như thế nào?",
+    "expected_answer": "Khoa xem xét các biện pháp xử lý, trong đó có thảo luận lại về điểm đánh giá với cán bộ hướng dẫn và cán bộ phản biện; nếu đạt được sự đồng thuận thì xử lý theo quyết định đồng thuận đó.",
+    "expected_context": "Khi CBPB đánh giá đề tài KLTN của SV không đủ điều kiện để bảo vệ trước hội đồng (điểm đánh giá dưới 5), Khoa xem xét các biện pháp xử lý sau và quyết định: Thảo luận lại về điểm đánh giá với CBHD và CBPB. Nếu đạt được sự đồng thuận thì xử lý theo quyết định đồng thuận này.",
+    "question_type": "confusable",
+    "source_document": "159-2024-quy-dinh-khoa-luan-tot-nghiep.pdf"
+  },
+  {
+    "question": "Học bổng của chương trình tài năng được cấp theo học kỳ và một học kỳ được tính bằng bao nhiêu tháng?",
+    "expected_answer": "Học bổng chương trình được cấp theo từng học kỳ, một học kỳ tính là 5.0 tháng.",
+    "expected_context": "Học bổng chương trình: học bổng được cấp cho sinh viên theo từng học kỳ – một học kỳ tính là 5.0 tháng. Mức học bổng hàng năm do Hiệu trưởng quyết định. Tất cả các sinh viên tài năng theo danh sách chính thức từng học kỳ đều được hưởng học bổng này.",
+    "question_type": "confusable",
+    "source_document": "1032-2025-quy-dinh-chuong-trinh-tai-nang.pdf"
+  },
+  {
+    "question": "Điểm trung bình học kỳ được dùng để làm gì?",
+    "expected_answer": "ĐTBHK được dùng để xét học bổng, khen thưởng và xử lý học vụ. Đây là điểm trung bình của các học phần sinh viên đã đăng ký trong học kỳ với trọng số là số tín chỉ của mỗi học phần, bao gồm cả học phần không đạt.",
+    "expected_context": "Điểm trung bình học kỳ (ĐTBHK) là điểm trung bình của các học phần mà sinh viên đã đăng ký học trong học kỳ đó với trọng số là số tín chỉ của mỗi học phần (bao gồm cả những học phần không đạt). ĐTBHK được dùng để xét học bổng, khen thưởng.",
+    "question_type": "confusable",
+    "source_document": "790-2022-quy-che-dao-tao-tin-chi.pdf"
+  },
+  {
+    "question": "Sinh viên cần đáp ứng điều kiện gì để được cấp bằng Cử nhân Tài năng?",
+    "expected_answer": "Sinh viên phải đang là sinh viên chính thức của chương trình tài năng và hoàn tất chương trình đúng hạn, đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng.",
+    "expected_context": "Sinh viên được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường ĐHCNTT – ĐHQG HCM khi đạt các điều kiện được xét tốt nghiệp như sau: − Đang là sinh viên chính thức của CTTN. − Hoàn tất chương trình đúng hạn – đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng.",
+    "question_type": "confusable",
+    "source_document": "1032-2025-quy-dinh-chuong-trinh-tai-nang.pdf"
+  }
+]

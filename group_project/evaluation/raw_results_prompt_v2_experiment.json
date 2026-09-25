@@ -1,0 +1,796 @@
+{
+  "run_date": "2026-09-24",
+  "generator_model": "gpt-4o-mini",
+  "evaluator_model": "gpt-4o-mini",
+  "embedding_model": "BAAI/bge-m3",
+  "top_k": 5,
+  "score_threshold": 0.55,
+  "chunk_size": 800,
+  "chunk_overlap": 120,
+  "configs": {
+    "A_dense_only": [
+      {
+        "question": "Theo Quy chế đào tạo theo học chế tín chỉ của Trường ĐHCNTT, một tín chỉ học tập được quy định bằng bao nhiêu tiết học lý thuyết?",
+        "question_type": "keyword",
+        "answer": "Theo Quy chế đào tạo theo học chế tín chỉ của Trường Đại học Công nghệ Thông tin, một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết [Document 1].",
+        "contexts": [
+          "## Điều 4. Tín chỉ học tập – Tín chỉ học phí  \n1. Tín chỉ học tập:  \n- Tín chỉ học tập: là đơn vị dùng để xác định thời gian, khối lượng học tập của sinh viên và khối lượng giảng dạy của giảng viên, đồng thời là đơn vị dùng để đánh giá kết quả học tập của sinh viên dựa trên số lượng tín chỉ học tập đã tích lũy được.  \n- Một tiết học được tính quy chuẩn bằng 50 phút.\n- Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Đối với những học phần lý thuyết hoặc thực hành, thí nghiệm: để tiếp thu được một tín chỉ sinh viên phải dành ít nhất 30 giờ chuẩn bị cá nhân (tự học) và giảng viên phải dành ít nhất 30 giờ để soạn giáo án, bài tập tình huống, soạn đề cương chi tiết, chấm bài tập về nhà, bài thi, giải đáp cho sinh viên hoặc phát triển học phần.  \n- Một tín chỉ thực tập doanh nghiệp được quy định bằng 4 tuần đi thực tập doanh  \nnghiệp.  \n- Số tiết, số tín chỉ, thời gian tự học, thời gian làm việc của giảng viên, cách đánh giá  \nhọc phần được quy định cụ thể trong đề cương chi tiết của từng học phần.  \n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.  \n2. Tín chỉ học phí (TCHP): là đơn vị dùng để lượng hóa chi phí của các hoạt động giảng dạy tính cho từng học phần. Số TCHP của mỗi học phần được xác định căn cứ vào đề cương và cách thức tổ chức học phần; cụ thể như sau:  \n- Phần giảng dạy lý thuyết tại lớp: 15 tiết tương đương với 1 TCHP.\n- Phần giảng dạy thực hành, thí nghiệm, thảo luận:  \no Học phần thực hành HT1 : 1 TCTH tương đương 2 TCHP.\no Học phần thực hành HT2 : 1 TCTH tương đương 1 TCHP.  \n- Một số học phần đặc biệt được xác định số TCHP riêng theo quyết định của Hiệu trưởng gồm các loại học phần: Giáo dục quốc phòng - an ninh, Giáo dục thể chất,",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\nCTĐT có thời gian thiết kế là 3,5 năm thì học kỳ cuối cùng là học kỳ thứ 7).  \no HPTCHM: mức đơn giá học phí cho loại tín chỉ học phí học mới.\no TCHPHM: tổng số tín chỉ học phí của các môn học mới.\no HPTCHL: mức đơn giá học phí cho loại tín chỉ học phí học lại.\no TCHPHL: tổng số tín chỉ học phí của các môn học lại.\no HPTCCT: mức đơn giá học phí cho loại tín chỉ học phí học cải thiện.\no TCHPCT: tổng số tín chỉ học phí của các môn học cải thiện.\no HPGH : học phí gia hạn, được tính theo công thức sau đây với giá trị t được xác  \nđịnh cụ thể tại các thông báo của Hiệu trưởng :\nHPGH = t × HPHKC (t < 100%).",
+          "ĐHQG-HCM về việc ban hành quy chế tổ chức và hoạt động của trường đại học thành viên và khoa trực thuộc ĐHQG-HCM;\nCăn cứ Nghị quyết số 02/NQ-HĐTĐHCNTT ngày 15 tháng 05 năm 2024 của Hội đồng\nTrường ĐH CNTT về việc ban hành Quy chế tổ chức và hoạt động của Trường ĐHCNTT;\nCăn cứ Quyết định số 790/QĐ-ĐHCNTT ngày 28 tháng 09 năm 2022 của Hiệu trưởng\nTrường ĐH CNTT về việc ban hành Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường ĐH CNTT;\nCăn cứ Quyết định số 896/QĐ-ĐHCNTT ngày 08 tháng 09 năm 2023 của Hiệu trưởng\nTrường ĐH CNTT về việc phê duyệt Đề án tuyển chọn và phát triển sinh viên tài năng trình độ đại học của Trường Đại học Công nghệ Thông tin giai đoạn 2023-2027;\nTheo đề nghị của Trưởng phòng Đào tạo Đại học.\nQUYẾT ĐỊNH:"
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-12",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-13",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-14",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-17",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-1"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết.",
+        "expected_context": "Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.2667055207041131,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333332916666
+      },
+      {
+        "question": "Một tiết học được tính quy chuẩn bằng bao nhiêu phút?",
+        "question_type": "keyword",
+        "answer": "Một tiết học được tính quy chuẩn bằng 50 phút [Document 1].",
+        "contexts": [
+          "## Điều 4. Tín chỉ học tập – Tín chỉ học phí  \n1. Tín chỉ học tập:  \n- Tín chỉ học tập: là đơn vị dùng để xác định thời gian, khối lượng học tập của sinh viên và khối lượng giảng dạy của giảng viên, đồng thời là đơn vị dùng để đánh giá kết quả học tập của sinh viên dựa trên số lượng tín chỉ học tập đã tích lũy được.  \n- Một tiết học được tính quy chuẩn bằng 50 phút.\n- Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Đối với những học phần lý thuyết hoặc thực hành, thí nghiệm: để tiếp thu được một tín chỉ sinh viên phải dành ít nhất 30 giờ chuẩn bị cá nhân (tự học) và giảng viên phải dành ít nhất 30 giờ để soạn giáo án, bài tập tình huống, soạn đề cương chi tiết, chấm bài tập về nhà, bài thi, giải đáp cho sinh viên hoặc phát triển học phần.  \n- Một tín chỉ thực tập doanh nghiệp được quy định bằng 4 tuần đi thực tập doanh  \nnghiệp.  \n- Số tiết, số tín chỉ, thời gian tự học, thời gian làm việc của giảng viên, cách đánh giá  \nhọc phần được quy định cụ thể trong đề cương chi tiết của từng học phần.  \n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.  \n2. Tín chỉ học phí (TCHP): là đơn vị dùng để lượng hóa chi phí của các hoạt động giảng dạy tính cho từng học phần. Số TCHP của mỗi học phần được xác định căn cứ vào đề cương và cách thức tổ chức học phần; cụ thể như sau:  \n- Phần giảng dạy lý thuyết tại lớp: 15 tiết tương đương với 1 TCHP.\n- Phần giảng dạy thực hành, thí nghiệm, thảo luận:  \no Học phần thực hành HT1 : 1 TCTH tương đương 2 TCHP.\no Học phần thực hành HT2 : 1 TCTH tương đương 1 TCHP.  \n- Một số học phần đặc biệt được xác định số TCHP riêng theo quyết định của Hiệu trưởng gồm các loại học phần: Giáo dục quốc phòng - an ninh, Giáo dục thể chất,",
+          "## Điều 3. Môn học  \n1. Học phần (hay môn học) là khối lượng kiến thức tương đối trọn vẹn, thuận tiện cho người học tích lũy trong quá trình học tập, nội dung được bố trí giảng dạy trong một học kỳ. Mỗi học phần được ký hiệu bằng một mã riêng do Trường quy định. Mỗi học phần thực hành, thí nghiệm, kiến tập,… có khối lượng từ 1 – 3 tín chỉ, mỗi học phần lý thuyết hoặc học phần có cả lý thuyết và thực hành có khối lượng từ 1 – 4 tín chỉ. Trường có hai hình thức tổ chức giảng dạy thực hành:\n- Thực hành Hình thức 1 (HT1): là hình thức dạy thực hành có sự hướng dẫn của giảng  \nviên cho toàn thời lượng học thực hành.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\nCTĐT có thời gian thiết kế là 3,5 năm thì học kỳ cuối cùng là học kỳ thứ 7).  \no HPTCHM: mức đơn giá học phí cho loại tín chỉ học phí học mới.\no TCHPHM: tổng số tín chỉ học phí của các môn học mới.\no HPTCHL: mức đơn giá học phí cho loại tín chỉ học phí học lại.\no TCHPHL: tổng số tín chỉ học phí của các môn học lại.\no HPTCCT: mức đơn giá học phí cho loại tín chỉ học phí học cải thiện.\no TCHPCT: tổng số tín chỉ học phí của các môn học cải thiện.\no HPGH : học phí gia hạn, được tính theo công thức sau đây với giá trị t được xác  \nđịnh cụ thể tại các thông báo của Hiệu trưởng :\nHPGH = t × HPHKC (t < 100%)."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-12",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-13",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-14",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-6",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-17"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Một tiết học được tính quy chuẩn bằng 50 phút.",
+        "expected_context": "Một tiết học được tính quy chuẩn bằng 50 phút.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3824583191032233,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333332916666
+      },
+      {
+        "question": "Cán bộ ra đề thi phải soạn đề và đáp án theo thang điểm nào?",
+        "question_type": "keyword",
+        "answer": "Cán bộ ra đề thi phải soạn đề và đáp án theo thang điểm 10, kèm theo các điểm chi tiết. Cán bộ ra đề thi và đơn vị tổ chức thi chịu trách nhiệm về việc bảo mật đề thi và đáp án, cũng như sự chính xác của đề thi và đáp án [Document 1, Điều 8].",
+        "contexts": [
+          "## Điều 8. Ra đề thi và in đề thi\n1. Đơn vị quản lý chuyên môn của môn học (Khoa/Bộ môn/Tổ phụ trách môn học) chịu trách nhiệm cử cán bộ ra đề thi và đáp án theo thang điểm 10 kèm các điểm chi tiết. Cán bộ ra đề thi và đơn vị tổ chức thi chịu trách nhiệm về việc bảo mật đề thi và đáp án. Cán bộ được phân công ra đề thi và đáp án chịu trách nhiệm về sự chính xác của đề thi, đáp án và xử lý các khiếu nại của SV sau khi thi (nếu có). Trên đề thi gốc có chữ ký của cán bộ ra đề thi; Chữ ký của người ra đề thi phải được che lại khi nhân đề thi.",
+          "Điều 8. Ra đề thi và in đề thi\n2. Nội dung đề thi phải thể hiện rõ các chuẩn đầu ra cần kiểm tra theo đề cương của môn học (Tham khảo mẫu đề thi “THI-M11” tại Phụ lục). Lời văn, câu chữ phải rõ ràng, không có sai sót. Đề thi đảm bảo thời gian làm bài tối thiểu là 60 phút và tối đa là 120 phút (trường hợp khác phải có sự phê duyệt của Hiệu trưởng). Trong thời gian thi, cán bộ ra đề thi của môn thi phải có mặt để xử lý những sự cố phát sinh khi cần thiết (cán bộ ra đề thi có thể là cán bộ coi thi).  \n4\n3. Các lớp học cùng một môn học được tổ chức thi cùng thời gian, theo cùng đề thi và cùng hình thức thi. Đối với các lớp chương trình đặc biệt có thể sử dụng đề riêng hoặc tỉ lệ đánh giá khác nhưng phải được sự phê duyệt của Hiệu trưởng.",
+          "Điều 16. Chấm thi, nhập điểm và công bố điểm\n- Trường hợp bảng điểm sai, cán bộ chấm thi gạch điểm sai, ghi lại điểm đúng kế bên và ký tên xác nhận, ghi thời gian đã chỉnh sửa điểm vào cột ghi chú. Đồng thời nhờ\nP.ĐTĐH/VPĐB cập nhật lại điểm đúng nếu cán bộ chấm thi đã quá hạn điều chỉnh điểm.\n- Tất cả các bảng điểm phải có có đầy đủ chữ ký, họ tên của cán bộ chấm thi và xác nhận của Trưởng/Phó đơn vị quản lý môn học.\nGhi chú: Việc nhập điểm khóa luận tốt nghiệp thực hiện theo qui trình riêng.\n4. Cán bộ chấm thi có trách nhiệm chấm điểm theo đúng đáp án. Điểm cho mỗi thành phần điểm được chấm theo thang điểm 10, làm tròn đến 0,5 điểm. Điểm tổng kết môn học\n(gọi tắt là điểm môn học) được làm tròn đến 0,1 điểm.",
+          "Điều 8. Ra đề thi và in đề thi\n4. Đề thi theo hình thức trắc nghiệm phải có tối thiểu 20 câu. Mỗi phòng thi có tối thiểu\n4 mã đề trắc nghiệm khác nhau được đánh mã số hoặc ký hiệu riêng để phân biệt.\n5. Đề thi theo hình thức vấn đáp gồm bộ các câu hỏi liên quan đến nội dung môn học.\nCán bộ chấm thi sử dụng các câu hỏi trong đề thi để hỏi thi SV.\n6. Trên đề thi có ghi đầy đủ thông tin về: môn thi, thời gian thi, quy định về việc sử dụng tài liệu, sử dụng máy tính. Trường hợp tổ chức thi trên máy tính tại phòng máy của Trường, đề thi phải ghi rõ quy định việc sử dụng internet, sử dụng mạng cục bộ, vị trí thư mục để nộp bài và hướng dẫn cách thức thu bài cho CBCT.",
+          "## Điều 17. Quản lý điểm thi\n1. Cán bộ chấm thi chịu trách nhiệm về tính chính xác của thông tin điểm thi được nhập và công bố cho SV trên Hệ thống quản lý điểm trong thời hạn chấm thi và nộp điểm.\n2. P.ĐTĐH/VPĐB chịu trách nhiệm kiểm tra thông tin điểm thi trên Hệ thống quản lý điểm so với điểm được ghi trên bài thi, tiếp nhận và xử lý khiếu nại của SV về điểm thi và cấp bảng điểm theo yêu cầu."
+        ],
+        "chunk_ids": [
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-12",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-13",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-50",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-14",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-53"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Theo thang điểm 10, kèm các điểm chi tiết.",
+        "expected_context": "Đơn vị quản lý chuyên môn của môn học (Khoa/Bộ môn/Tổ phụ trách môn học) chịu trách nhiệm cử cán bộ ra đề thi và đáp án theo thang điểm 10 kèm các điểm chi tiết.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3551501998075008,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333332916666
+      },
+      {
+        "question": "Bài thi được lưu trữ trong thời hạn bao lâu sau khi kết thúc đợt thi?",
+        "question_type": "keyword",
+        "answer": "Bài thi được lưu trữ trong thời hạn 05 tháng sau khi kết thúc đợt thi, theo quy định tại Điều 21 của văn bản Quy định tổ chức thi tập trung các môn học hệ đại học chính quy (1139/QĐ-ĐHCNTT, 20/12/2022) [Document 1].",
+        "contexts": [
+          "# CHƯƠNG V\nCHẾ ĐỘ LƯU TRỮ\n## Điều 21. Chế độ lưu trữ\nKhoa và các đơn vị liên quan có trách nhiệm bàn giao cho P.ĐTĐH hồ sơ của đợt thi ngay sau khi kết thúc đợt thi và bài thi trong thời hạn 05 tháng sau khi kết thúc đợt thi. Công tác lưu trữ được thực hiện theo bảng dưới đây:\n| | | | Hình thức | | | Thời hạn |\n| ---------------------------------- | ------------------ | --- | ---------- | --------------- | ----- | ---------- |\n| | Hồ sơ cần lưu trữ | | | Đơn vị lưu trữ | | |\n| | | | lưu trữ | | | lưu trữ |\n| Đề thi và đáp án (kèm thang điểm) | | | Bản giấy | | Khoa | 9 năm |\n| Bảng điểm (bảng photo) | | | Bản giấy | | Khoa | Vĩnh viễn |\nSổ bàn giao bài thi và bảng điểm giữa\n| | | | Bản giấy | | Khoa | 9 năm |\n| --- | --- | --- | --------- | --- | ----- | ------ |",
+          "Điều 21. Chế độ lưu trữ\n| | | | Bản giấy | | Khoa | 9 năm |\n| --- | --- | --- | --------- | --- | ----- | ------ |\nKhoa với các cá nhân/đơn vị  \n19  \n| Thông báo kế hoạch thi | Bản giấy | P.ĐTĐH | 9 năm |\n| ------------------------------- | --------- | ------- | ------ |\n| Lịch thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Phân công cán bộ ra đề thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Phân công cán bộ nhân đề thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Phân công cán bộ chấm thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Đề thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Bài thi | Bản giấy | P.ĐTĐH | 9 năm |\nBản giấy,\nKhoa (đối với hoặc bản bản giấy); hoặc điện tử lưu\nP.DL&CNTT\n| Yêu cầu đồ án (tương đương đề thi) | trên hệ | | 9 năm |",
+          "## Điều 15. Chế độ lưu trữ  \n7  \n1. Toàn bộ biên bản, hồ sơ bảo vệ KLTN được Thư ký Hội đồng bàn giao cho Khoa và  \nđược các Khoa lưu trữ tối thiểu trong vòng 5 năm.  \n2. Khoa tổng hợp điểm vào danh sách các SV đã đăng ký làm KLTN (kể cả các SV không hoàn thành KLTN) do P.ĐTĐH/VPCCTĐB cung cấp. Khoa nhập danh sách điểm\nKLTN lên hệ thống, đồng thời gửi bảng điểm giấy cho P.ĐTĐH/VPCCTĐB trong thời gian 20 ngày sau ngày bảo vệ.",
+          "Điều 21. Chế độ lưu trữ\nDanh sách phúc khảo của SV kèm kết quả\n| | Bản giấy | P.ĐTĐH | Vĩnh viễn |\n| --- | --------- | ------- | ---------- | phúc khảo\nSổ bàn giao bài thi và bảng điểm giữa\n| | Bản giấy | P.ĐTĐH | 9 năm |\n| --- | --------- | ------- | ------ |\nP.ĐTĐH với các cá nhân/đơn vị  \n20",
+          "Điều 21. Chế độ lưu trữ\nKhoa (đối với hoặc bản bản giấy); hoặc điện tử lưu\nP.DL&CNTT\n| Yêu cầu đồ án (tương đương đề thi) | trên hệ | | 9 năm |\n| ------------------------------------- | -------- | --- | ------- | và giảng viên thống hỗ trợ ra đề đối với học tập của bản điện tử\nTrường\nBản giấy,\nKhoa (đối với hoặc bản bản giấy); hoặc điện tử lưu\nP.DL&CNTT\n| Báo cáo đồ án (tương đương bài thi) | trên hệ | | 9 năm |\n| -------------------------------------- | -------- | --- | ------- | và giảng viên thống hỗ trợ chấm thi đối học tập của với bản điện tử\nTrường\n| Bảng điểm (bản chính) | Bản giấy | P.ĐTĐH | Vĩnh viễn |\n| ------------------------ | --------- | ------- | ---------- |\nDanh sách phúc khảo của SV kèm kết quả\n| | Bản giấy | P.ĐTĐH | Vĩnh viễn |"
+        ],
+        "chunk_ids": [
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-66",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-67",
+          "legal/159-2024-quy-dinh-khoa-luan-tot-nghiep.md::chunk-24",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-69",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-68"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Bài thi được bàn giao cho P.ĐTĐH trong thời hạn 05 tháng sau khi kết thúc đợt thi.",
+        "expected_context": "Khoa và các đơn vị liên quan có trách nhiệm bàn giao cho P.ĐTĐH hồ sơ của đợt thi ngay sau khi kết thúc đợt thi và bài thi trong thời hạn 05 tháng sau khi kết thúc đợt thi.",
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.5361922152910954,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      {
+        "question": "Sau khi nhận danh sách yêu cầu phúc khảo, Khoa phải cử cán bộ chấm phúc khảo trong vòng bao nhiêu ngày?",
+        "question_type": "keyword",
+        "answer": "Sau khi nhận danh sách yêu cầu phúc khảo, Khoa phải cử cán bộ chấm phúc khảo trong vòng 7 ngày để xem xét lại bài thi và gửi kết quả phúc khảo cho Phòng Đào tạo Đại học (P.ĐTĐH) [Document 1, Điều 19].",
+        "contexts": [
+          "# CHƯƠNG IV\nPHÚC KHẢO\n## Điều 19. Tổ chức phúc khảo và giải quyết khiếu nại về điểm thi\n1. Đối với các đợt thi CBGD có trách nhiệm công bố điểm thi cho SV theo qui định.\n2. SV theo dõi thông báo của phòng ĐTĐH để đăng ký phúc khảo trên hệ thống.\n3. P.ĐTĐH xuất danh sách phúc khảo trên hệ thống theo môn học và gửi danh sách yêu cầu phúc khảo cho đơn vị tổ chức thi.\n4. Trong vòng 7 ngày, Khoa cử cán bộ chấm thi phúc khảo để xem xét lại bài thi và gửi kết quả phúc khảo cho P.ĐTĐH để cập nhật lại điểm trên Hệ thống quản lý điểm và công bố cho SV.\n5. Cán bộ chấm thi có trách nhiệm giải đáp mọi thắc mắc của sinh viên về điểm thi trong thời hạn nhận đơn phúc khảo.\n6. Khoa chuyển bài thi và hồ sơ thi về P.ĐTĐH để lưu trữ.",
+          "Điều 20. Quy trình phúc khảo\n| --- | ---------------------- | ---- | ----- | ---------- | cầu / VPĐB\n| | gửi cho đơn vị tổ chức | | | khảo điểm |\n| --- | ----------------------- | --- | --- | ----------- | phúc thi.\nkhảo  \n18  \n– Khoa phân công cán bộ xem xét bài thi.\n– Danh sách phúc khảo phải có đầy đủ chữ ký\nKhoa, cán bộ chấm và Khoa\n| | Chấm | | | Cán bộ | P.ĐTĐ | – Danh |\n| --- | ----- | --- | --- | ------- | ----- | ------- | duyệt, ghi rõ lý do nếu\n| 3 | phúc | | t+17 | chấm | H/ | sách phúc |\n| --- | ----- | --- | ----- | ----- | --- | ---------- | có sự khác biệt điểm\n| | khảo | | | phúc | VPĐB | khảo điểm |\n| --- | ----- | --- | --- | ----- | ----- | ----------- | trước và sau khi phúc khảo khảo.\n– Khoa chuyển phiếu phúc khảo sau khi chấm cho P.ĐTĐH/ VPĐB.\nP.ĐTĐH/VPĐB cập nhật",
+          "Điều 20. Quy trình phúc khảo\nK\n| H | 3. Tổ chức | | | |\n| --- | ------------ | --- | --- | --- |\n| O | chấm phúc | | | |\nA khảo  \n3. Nội dung quy trình t là ngày công bố điểm\nThời\n| | | hạn | Đơn vị | |\n| --- | --- | ---- | ------- | --- |\nQuy Đơn vị\n| Bước | Mô tả chi tiết công việc | hoàn | phối | Biểu mẫu |\n| ----- | ------------------------- | ----- | ----- | --------- | trình thực hiện\n| | | thành | hợp | |\n| --- | --- | ------ | ---- | --- |\n(ngày)\n| | – SV đăng ký phúc khảo | | | – Link |\n| --- | ----------------------- | --- | --- | -------- |\n| | trên hệ thống sau ngày | | | đăng ký |\nThông\n| | công bố điểm. | | | phúc khảo |\n| --- | -------------- | --- | --- | ---------- | báo P.ĐTĐH\n| 1 | – Chỉ phúc khảo đối với | t+5 | | https://daa. |",
+          "Điều 20. Quy trình phúc khảo\n– Khoa chuyển phiếu phúc khảo sau khi chấm cho P.ĐTĐH/ VPĐB.\nP.ĐTĐH/VPĐB cập nhật\n| | Công bố | điểm vào hệ thống quản | | | | |\n| --- | -------- | ----------------------- | ----- | ------- | --- | --- |\n| | kết quả | lý điểm và công bố kết | | P.ĐTĐH | | |\n| 4 | | | t+20 | | | |\n| | phúc | quả cho SV. SV sẽ nhận | | / VPĐB | | |\n| | khảo | được email thông báo | | | | | kết quả phúc khảo.\nLưu trữ\n– Lưu trữ hồ sơ phúc\n| | hồ sơ | | | P.ĐTĐH | | |\n| --- | ------ | ---------------------- | ----- | ------- | --- | --- |\n| 5 | | khảo vào bộ hồ sơ thi | t+30 | | | |\n| | phúc | | | / VPĐB | | | của đợt thi.\nkhảo",
+          "## Điều 20. Quy trình phúc khảo\n1. Đầu vào, đầu ra, thời gian:\nĐầu vào: Danh sách chấm phúc khảo\nĐầu ra: Danh sách chấm phúc khảo (có điểm phúc khảo)  \n17  \n2. Sơ đồ tóm tắt\n| 1. Thông | | 4. Cập | | |\n| ---------- | --- | -------- | --- | --- |\n2. Gửi danh\n/HĐTĐ.P báo cho nhật điểm\n| BĐPV | sách yêu cầu | | | |\n| ---------- | ------------- | ------- | -------- | --- |\n| sinh viên | | lên hệ | 5. Lưu | | phúc khảo đăng ký\n| | | thống và | | trữ |\n| --- | --- | --------- | --- | ---- | cho đơn vị tổ\n| phúc khảo | | công bố | | |\n| ---------- | --- | -------- | --- | --- | chức thi\n| | | kết quả | | |\n| --- | --- | -------- | --- | --- |  \nK\n| H | 3. Tổ chức | | | |\n| --- | ------------ | --- | --- | --- |\n| O | chấm phúc | | | |\nA khảo"
+        ],
+        "chunk_ids": [
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-60",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-64",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-62",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-65",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-61"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Trong vòng 7 ngày.",
+        "expected_context": "Trong vòng 7 ngày, Khoa cử cán bộ chấm thi phúc khảo để xem xét lại bài thi và gửi kết quả phúc khảo cho P.ĐTĐH để cập nhật lại điểm trên Hệ thống quản lý điểm và công bố cho SV.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.20940333231243954,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      },
+      {
+        "question": "Sinh viên bị đuổi học trong những trường hợp nào?",
+        "question_type": "semantic",
+        "answer": "Sinh viên bị buộc thôi học trong những trường hợp sau đây:\n\n1. Điểm trung bình học kỳ (ĐTBHK) hai học kỳ liên tiếp gần nhất bằng 0.\n2. Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại.\n3. Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành chương trình đào tạo.\n4. Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm quy định.\n5. Bị đình chỉ học tập lần thứ hai.\n6. Vi phạm kỷ luật có tính chất và mức độ nghiêm trọng, gây ảnh hưởng xấu đến Trường và xã hội; hoặc vi phạm pháp luật bị xử phạt tù giam [Document 5].",
+        "contexts": [
+          "Điều 16. Xử lý học vụ\nTrường và xã hội; hoặc vi phạm pháp luật bị xử phạt tù giam.  \nSinh viên có tên trong quyết định buộc thôi học bị xóa tên khỏi danh sách sinh viên chính thức của Trường. Trong vòng một tháng sau khi có quyết định buộc thôi học, Trường có trách nhiệm thông báo đến sinh viên theo địa chỉ email chính thức Trường đã cấp, đồng thời thông báo đến gia đình sinh viên theo địa chỉ sinh viên khai báo với Trường.  \nSinh viên thuộc diện buộc thôi học nếu có nguyện vọng chuyển từ hình thức đào tạo chính quy sang hình thức đào tạo từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp.",
+          "Điều 16. Xử lý học vụ\nđược tự động xóa hình thức xử lý khi kết thúc thời hạn.  \n2. Đình chỉ học tập  \n- Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ  \nhoặc nhờ người thi hộ.  \nTrang 14/27  \n- Đình chỉ học tập có thời hạn: áp dụng đối với những sinh viên đang trong thời gian bị cảnh báo mà vẫn vi phạm kỷ luật hoặc vi phạm nghiêm trọng các hành vi sinh viên không được làm; sinh viên vi phạm pháp luật bị xử phạt tù nhưng cho hưởng án treo.  \n3. Thôi học  \na. Sinh viên bị buộc thôi học nếu vi phạm một trong những trường hợp sau đây:\n- ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0.\n- Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại.\n- Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành",
+          "## Điều 17. Thôi học, tạm dừng học tập  \n1. Trường hợp vì hoàn cảnh cá nhân, sinh viên có thể gửi đơn xin thôi học. Trường xem  \nxét ra quyết định cho phép thôi học và xóa tên khỏi danh sách sinh viên.  \n2. Sinh viên được quyền xin tạm dừng học tập và được bảo lưu kết quả học tập trong các  \ntrường hợp sau:  \n- Được cơ quan có thẩm quyền điều động, đại diện quốc gia tham dự các kỳ thi, giải  \nđấu quốc tế.  \n- Bị ốm, thai sản hoặc tai nạn phải điều trị thời gian dài, có chứng nhận của cơ sở  \nkhám bệnh, chữa bệnh có thẩm quyền theo quy định của Bộ Y tế.  \nTrang 15/27  \n- Trường hợp vì lý do cá nhân, sinh viên phải học ít nhất một học kỳ ở Trường và không rơi vào các trường hợp bị đình chỉ học tập, có xác nhận của gia đình và giấy tờ liên quan hợp lệ.",
+          "Điều 16. Xử lý học vụ\n- Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành  \nchương trình đào tạo (xem thêm Điều 6 của Quy chế này).\n- Sau khi hết thời gian được cho thôi học theo mục b khoản này.\n- Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm Khoản 1 Điều 16.\n- Bị đình chỉ học tập lần thứ hai.\n- Vi phạm kỷ luật có tính chất và mức độ nghiêm trọng, gây ảnh hưởng xấu đến  \nTrường và xã hội; hoặc vi phạm pháp luật bị xử phạt tù giam.",
+          "Điều 17. Thôi học, tạm dừng học tập\n3. Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.  \n4. Sinh viên tạm dừng học tập, khi muốn trở lại học tiếp tại Trường phải hoàn tất thủ tục  \nnhập học theo quy định của Trường.  \n5. Sinh viên được xin thôi học vì lý do cá nhân, trừ trường hợp bị xem xét buộc thôi học hoặc xem xét kỷ luật. Những sinh viên đã có quyết định thôi học muốn quay trở lại học phải dự tuyển đầu vào như những thí sinh khác."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-58",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-56",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-60",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-57",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-61"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Sinh viên bị buộc thôi học nếu vi phạm một trong các trường hợp: ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0; đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại; đã hết thời gian tối đa hoàn thành khóa học nhưng chưa hoàn thành chương trình đào tạo; sau khi hết thời gian được cho thôi học; bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm; bị đình chỉ học tập lần thứ hai; vi phạm kỷ luật.",
+        "expected_context": "Sinh viên bị buộc thôi học nếu vi phạm một trong những trường hợp sau đây: - ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0. - Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại. - Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành chương trình đào tạo. - Sau khi hết thời gian được cho thôi học. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm. - Bị đình chỉ học tập lần thứ hai.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.40828099765064285,
+        "context_recall": 0.8571428571428571,
+        "context_precision": 0.8874999999778125
+      },
+      {
+        "question": "Khi nào sinh viên bị nhắc nhở vì kết quả học tập kém?",
+        "question_type": "semantic",
+        "answer": "Sinh viên sẽ bị nhắc nhở và nhận cảnh báo học vụ nếu vi phạm một trong các trường hợp sau đây: không hoàn thành nghĩa vụ học phí đúng quy định, có điểm trung bình học kỳ (ĐTBHK) dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0. Thời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo và sinh viên sẽ được tự động xóa hình thức xử lý khi kết thúc thời hạn này [Document 1, Điều 16].",
+        "contexts": [
+          "## Điều 16. Xử lý học vụ  \nXử lý học vụ nhằm giúp cho sinh viên lưu ý, điều chỉnh kế hoạch học tập và thái độ học tập để có thể tốt nghiệp đúng thời hạn quy định. Hằng năm, Trường tiến hành xử lý học vụ theo 2 đợt: sau học kỳ 1 và sau học kỳ hè. Kết quả học tập của học kỳ hè được tính chung vào kết quả học tập học kỳ 2 của năm học tương ứng để xem xét xử lý học vụ.  \n1. Cảnh báo học vụ  \nSinh viên bị cảnh báo học vụ nếu vi phạm một trong những trường hợp sau đây:  \n- Không hoàn thành nghĩa vụ học phí đúng quy định.\n- Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới  \n4,0.  \nThời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo. Sinh viên sẽ  \nđược tự động xóa hình thức xử lý khi kết thúc thời hạn.  \n2. Đình chỉ học tập",
+          "Điều 3. Môn học\n- Học phần học lại: là học phần sinh viên đã học nhưng kết quả chưa đạt (điểm nhỏ  \nhơn 5), sinh viên phải đăng ký học lại học phần đó nếu là học phần bắt buộc.  \n- Học phần học cải thiện: là học phần sinh viên đã học có kết quả đạt (từ 5 điểm trở lên), nhưng muốn đăng ký học lại. Sinh viên chỉ được đăng ký học cải thiện theo quy định tại Khoản 3 Điều 14 của quy chế này.  \n- Học phần điều kiện: là các học phần sinh viên bắt buộc phải học như giáo dục thể chất, giáo dục quốc phòng - an ninh, có kết quả đánh giá không tính vào điểm trung bình chung học kỳ, điểm trung bình chung tích lũy.",
+          "Điều 14. Đăng ký học tập\n2. Học lại: Sinh viên phải đăng ký học lại các học phần bắt buộc có điểm học phần dưới 5,0 ở các học kỳ trước. Đối với các học phần tự chọn, nếu điểm dưới 5,0 sinh viên được phép đăng ký học lại học phần đó hoặc chọn học phần khác thay thế trong số các học phần tự chọn quy định cho mỗi ngành đào tạo.  \nKhi nộp hồ sơ xét tốt nghiệp, sinh viên có thể làm đơn xin hủy học phần tự chọn đã học\n(sinh viên không được hủy kết quả học tập trong lúc đang học).  \n3. Học cải thiện điểm  \nĐối với học phần có kết quả đạt, sinh viên muốn phấn đấu đạt kết quả cao hơn (cải  \nthiện điểm) phải đăng ký học lại học phần đó theo quy định sau:  \n- Kết quả cao nhất trong các lần học được chọn để tính vào ĐTBC, ĐTBCTL. Điểm",
+          "Điều 23. Xử lý sinh viên dự thi vi phạm quy định\n− Cảnh cáo đối với các SV vi phạm một trong các lỗi sau đây. Người bị xử lý vi phạm cảnh cáo trong khi thi môn nào sẽ bị trừ 50% số điểm thi của môn đó.\n+ Đã bị khiển trách một lần nhưng trong giờ thi môn đó vẫn tiếp tục vi phạm;\n+ Trao đổi bài làm hoặc giấy nháp cho bạn;\n+ Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau. Nếu người bị xử lý có đủ bằng chứng chứng minh mình bị quay cóp thì có thể xem xét giảm từ mức xử lý vi phạm cảnh cáo xuống mức khiển trách.\n− Đình chỉ thi đối với các SV vi phạm một trong các lỗi sau đây. Người bị xử lý vi phạm đình chỉ thi trong khi thi môn nào sẽ bị điểm không (0) môn đó; phải ra khỏi phòng thi ngay sau khi có quyết định; phải nộp bài làm và đề thi cho CBCT.",
+          "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa\n3. Đối với các học phần đã đăng ký học, sinh viên có trách nhiệm thực hiện đầy đủ và nghiêm túc mọi yêu cầu của cán bộ giảng dạy về việc lên lớp, làm bài tập, thực hành, thí nghiệm, tham gia thảo luận, dự kiểm tra giữa học phần và kết thúc học phần. Trong trường hợp sinh viên có lý do chính đáng (ốm đau, tai nạn, việc gia đình đột xuất,…) không thể tham dự thi giữa kỳ thì làm đơn trình bày cùng các minh chứng, P.ĐTĐH xem xét và nếu hợp lệ sinh viên được phép dùng điểm cuối kỳ thay cho điểm giữa kỳ."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-55",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-10",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-50",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-75",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-74"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Sinh viên bị cảnh báo học vụ nếu không hoàn thành nghĩa vụ học phí đúng quy định, hoặc có ĐTBHK dưới 3,0, hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.",
+        "expected_context": "Sinh viên bị cảnh báo học vụ nếu vi phạm một trong những trường hợp sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0. Thời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.30824420738480784,
+        "context_recall": 1.0,
+        "context_precision": 0.699999999965
+      },
+      {
+        "question": "Sinh viên được nghỉ học tạm thời tối đa bao lâu?",
+        "question_type": "semantic",
+        "answer": "Sinh viên được nghỉ học tạm thời tối đa là hai học kỳ chính liên tiếp, theo quy định tại Điều 17 của Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy [Document 1].",
+        "contexts": [
+          "Điều 17. Thôi học, tạm dừng học tập\n3. Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.  \n4. Sinh viên tạm dừng học tập, khi muốn trở lại học tiếp tại Trường phải hoàn tất thủ tục  \nnhập học theo quy định của Trường.  \n5. Sinh viên được xin thôi học vì lý do cá nhân, trừ trường hợp bị xem xét buộc thôi học hoặc xem xét kỷ luật. Những sinh viên đã có quyết định thôi học muốn quay trở lại học phải dự tuyển đầu vào như những thí sinh khác.",
+          "## Điều 17. Thôi học, tạm dừng học tập  \n1. Trường hợp vì hoàn cảnh cá nhân, sinh viên có thể gửi đơn xin thôi học. Trường xem  \nxét ra quyết định cho phép thôi học và xóa tên khỏi danh sách sinh viên.  \n2. Sinh viên được quyền xin tạm dừng học tập và được bảo lưu kết quả học tập trong các  \ntrường hợp sau:  \n- Được cơ quan có thẩm quyền điều động, đại diện quốc gia tham dự các kỳ thi, giải  \nđấu quốc tế.  \n- Bị ốm, thai sản hoặc tai nạn phải điều trị thời gian dài, có chứng nhận của cơ sở  \nkhám bệnh, chữa bệnh có thẩm quyền theo quy định của Bộ Y tế.  \nTrang 15/27  \n- Trường hợp vì lý do cá nhân, sinh viên phải học ít nhất một học kỳ ở Trường và không rơi vào các trường hợp bị đình chỉ học tập, có xác nhận của gia đình và giấy tờ liên quan hợp lệ.",
+          "Điều 16. Xử lý học vụ\nđược tự động xóa hình thức xử lý khi kết thúc thời hạn.  \n2. Đình chỉ học tập  \n- Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ  \nhoặc nhờ người thi hộ.  \nTrang 14/27  \n- Đình chỉ học tập có thời hạn: áp dụng đối với những sinh viên đang trong thời gian bị cảnh báo mà vẫn vi phạm kỷ luật hoặc vi phạm nghiêm trọng các hành vi sinh viên không được làm; sinh viên vi phạm pháp luật bị xử phạt tù nhưng cho hưởng án treo.  \n3. Thôi học  \na. Sinh viên bị buộc thôi học nếu vi phạm một trong những trường hợp sau đây:\n- ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0.\n- Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại.\n- Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành",
+          "Điều 16. Xử lý học vụ\nb. Sinh viên đã hết thời gian tối đa theo Điều 6 của Quy chế này, đã hoàn thành các học phần trong chương trình đào tạo, chỉ còn thiếu chứng chỉ Giáo dục quốc phòng-an ninh hoặc chứng chỉ/chứng nhận ngoại ngữ xét công nhận tốt nghiệp thì được Trường xem xét cho thôi học; Trong thời hạn 03 năm tính từ khi thôi học, sinh viên phải hoàn thiện các điều kiện còn thiếu để đề nghị xét công nhận tốt nghiệp.  \nSinh viên chưa hết thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của Quy chế này, đã hoàn thành các học phần trong chương trình đào tạo có nguyện vọng xin thôi học theo diện này thì nộp đơn xin thôi học cho P.ĐTĐH.",
+          "Điều 16. Xử lý học vụ\nTrường và xã hội; hoặc vi phạm pháp luật bị xử phạt tù giam.  \nSinh viên có tên trong quyết định buộc thôi học bị xóa tên khỏi danh sách sinh viên chính thức của Trường. Trong vòng một tháng sau khi có quyết định buộc thôi học, Trường có trách nhiệm thông báo đến sinh viên theo địa chỉ email chính thức Trường đã cấp, đồng thời thông báo đến gia đình sinh viên theo địa chỉ sinh viên khai báo với Trường.  \nSinh viên thuộc diện buộc thôi học nếu có nguyện vọng chuyển từ hình thức đào tạo chính quy sang hình thức đào tạo từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-61",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-60",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-56",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-59",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-58"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, và được tính vào thời gian tối đa hoàn thành khóa học.",
+        "expected_context": "Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.",
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.4466555782867712,
+        "context_recall": 1.0,
+        "context_precision": 0.999999999975
+      },
+      {
+        "question": "Nếu sinh viên chưa đạt môn tiếng Anh sau hai học kỳ đầu thì bị hạn chế điều gì?",
+        "question_type": "semantic",
+        "answer": "Nếu sinh viên chưa đạt môn tiếng Anh sau hai học kỳ chính đầu tiên, sinh viên sẽ chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn. Điều này áp dụng cho sinh viên thuộc các chương trình CTC, CTTN, và CTTT theo quy định tại Điều 11 của Quy chế đào tạo ngoại ngữ áp dụng từ khóa 2026 [Document 5].",
+        "contexts": [
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\nb) Sau 3 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL04. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nc) Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL05. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.",
+          "## Điều 11. Chuẩn quá trình về ngoại ngữ\n1. Đối với sinh viên CTC, CTTN:\na) Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học PET01 hoặc IEL01. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nb) Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học PET02 hoặc IEL02. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\n2. Đối với sinh viên chương trình CTA:",
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\n2. Đối với sinh viên chương trình CTA:\na) Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL04. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ  \n7 ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nb) Sau 3 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL05. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.",
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\nc) Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt chuẩn đầu ra để xét tốt nghiệp (theo Bảng 6 của Quy định này). Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\n3. Đối với sinh viên CTTT:\na) Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL03. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nb) Sau 3 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong",
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\nd) Sau 5 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt chuẩn đầu ra để xét tốt nghiệp (theo Bảng 5 của Quy định này). Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\n4. Đối với sinh viên ngành Công nghệ Thông tin chương trình Việt - Nhật: Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn Tiếng Nhật 2 (mã môn học JAN02) hoặc có chứng chỉ tương đương JLPT N5 hoặc NAT-TEST N5. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn."
+        ],
+        "chunk_ids": [
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-35",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-32",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-33",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-34",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-36"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ, bao gồm cả đăng ký học lại hoặc cải thiện, cho đến khi đạt.",
+        "expected_context": "Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong CTĐT là môn học PET01 hoặc IEL01. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt.",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.5139690391645729,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998
+      },
+      {
+        "question": "Tài liệu học tập được số hóa dùng cho dạy học trực tuyến được gọi là gì?",
+        "question_type": "semantic",
+        "answer": "Tài liệu học tập được số hóa dùng cho dạy học trực tuyến được gọi là \"học liệu điện tử\". Học liệu điện tử là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính, có nội dung đáp ứng chuẩn đầu ra của một môn học, và video bài giảng là thành phần bắt buộc phải có của học liệu điện tử [Document 1, Điều 2].",
+        "contexts": [
+          "## Điều 2. Giải thích từ ngữ  \n1. Học liệu điện tử: là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính (văn bản, âm thanh, hình ảnh, video, đồ họa, …), được cấu trúc theo kịch bản dạy và học nhất định, có nội dung đáp ứng chuẩn đầu ra của một môn học. Video bài giảng là thành phần bắt buộc phải có của học liệu điện tử.\n2. Phương thức dạy học trực tiếp: là phương thức dạy và học có sự gặp mặt trực tiếp giữa giảng viên và sinh viên.",
+          "## Điều 9. Sử dụng học liệu điện tử  \nHọc liệu điện tử của Trường được:  \n1. Cung cấp cho sinh viên có đăng ký môn học để sử dụng trong học tập hoặc tham  \nkhảo.  \n2. Cung cấp cho giảng viên mới công tác tại trường để tham khảo nhằm mục đích  \nbồi dưỡng giảng viên.  \n3. Cung cấp cho giảng viên được phân công dạy môn học để sử dụng trong giảng  \ndạy.",
+          "## Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo  \n1. Ứng dụng công nghệ thông tin trong tổ chức đào tạo qua mạng là việc sử dụng các trang thiết bị điện tử, phần mềm, học liệu điện tử và mạng viễn thông (chủ yếu là mạng\nInternet) cho các hoạt động giảng dạy và học tập nhằm đổi mới phương pháp dạy - học, nâng cao hiệu quả công tác đào tạo.",
+          "# CHƯƠNG II. – HỌC LIỆU ĐIỆN TỬ  \n## Điều 8. Xây dựng, thẩm định học liệu điện tử  \n1. Học liệu điện tử sử dụng trong DHTT và DHKH phải có nội dung phù hợp với đề cương môn học được phê duyệt (bao gồm chuẩn đầu ra môn học), bảo đảm tính khoa học, sư phạm và đáp ứng được nhu cầu tự học của sinh viên.  \n2. Học liệu điện tử được sử dụng từ nguồn sẵn có của Trường hoặc giảng viên chủ  \nđộng xây dựng.  \n3. Khi xây dựng và sử dụng học liệu điện tử, giảng viên có trách nhiệm đảm bảo  \ncác quy định của pháp luật về Luật Sở hữu trí tuệ hiện hành.  \n4. Các ĐVQLMH có trách nhiệm thẩm định, đảm bảo chất lượng học liệu điện tử phục vụ DHTT, DHKH đối với các môn học mà đơn vị phụ trách. Trường có thể tổ chức thẩm định lại trong trường hợp cần thiết.",
+          "# CHƯƠNG III. - HẠ TẦNG KỸ THUẬT  \n## Điều 10. Hệ thống phần mềm phục vụ DHTT và DHKH  \nHệ thống phần mềm phục vụ DHTT, DHKH được sử dụng kết hợp bởi các phần mềm sau đây:\n1. Hệ thống UIT-Elearning (https://courses.uit.edu.vn):\na) Giúp giảng viên tổ chức triển khai giảng bài, hướng dẫn, giao nhiệm vụ học tập, chuyển tải học liệu điện tử đến sinh viên;  \n6  \nb) Giúp sinh viên tương tác, trao đổi thông tin với giảng viên và những sinh viên khác.\n2. Phần mềm Microsoft Teams:\na) Giúp giảng viên tổ chức triển khai giảng bài, chia sẻ màn hình máy tính, hướng dẫn, giao nhiệm vụ học tập;\nb) Giúp sinh viên tương tác, trao đổi thông tin với giảng viên và những sinh viên khác.\n3. Hệ thống Cổng https:/daa.uit.edu.vn):"
+        ],
+        "chunk_ids": [
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-6",
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-18",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-89",
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-17",
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-19"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Được gọi là học liệu điện tử, trong đó video bài giảng là thành phần bắt buộc phải có.",
+        "expected_context": "Học liệu điện tử: là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính (văn bản, âm thanh, hình ảnh, video, đồ họa, …), được cấu trúc theo kịch bản dạy và học nhất định, có nội dung đáp ứng chuẩn đầu ra của một môn học. Video bài giảng là thành phần bắt buộc phải có của học liệu điện tử.",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.420070627864508,
+        "context_recall": 1.0,
+        "context_precision": 0.999999999975
+      },
+      {
+        "question": "Mỗi năm Trường tổ chức bao nhiêu đợt bảo vệ khóa luận tốt nghiệp?",
+        "question_type": "confusable",
+        "answer": "Mỗi năm Trường Đại học Công nghệ Thông tin tổ chức 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường và được công bố vào đầu mỗi năm học [Document 1, Điều 12].",
+        "contexts": [
+          "## Điều 12. Tổ chức bảo vệ KLTN  \n1. Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường và được công bố vào đầu mỗi năm học. Khoa đề nghị thời gian tổ chức Hội đồng và gởi về\nP.ĐTĐH/VPCCTĐB chậm nhất 7 ngày sau thời hạn thực hiện KLTN đã hết.  \n2. Khoa gửi danh sách SV đủ điều kiện bảo vệ KLTN trước Hội đồng cho P.\nĐTĐH/VPCCTĐB. Căn cứ đề nghị của Trưởng P.ĐTĐH và Trưởng khoa, Hiệu trưởng ra quyết định thành lập Hội đồng bảo vệ KLTN cho SV.  \n3. Các thành viên Hội đồng phải có mặt đầy đủ khi Hội đồng họp đánh giá các KLTN.  \n4. CBHD và CBPB phải gửi bản nhận xét bằng văn bản có chữ ký kèm ý kiến đánh giá xếp loại và điểm cụ thể dành cho KLTN cho thư ký Hội đồng trước khi Hội đồng bắt đầu làm việc.",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\nbằng văn bản của cán bộ hướng dẫn.  \n- Hằng năm có 2 đợt bảo vệ khóa luận tốt nghiệp được xác định cụ thể trên kế hoạch đào tạo của Trường. Nếu hết thời gian thực hiện khóa luận theo quy định mà sinh viên không ra bảo vệ hoặc không được cán bộ hướng dẫn đồng ý cho ra bảo vệ vào đúng đợt chính thức xem như không đạt học phần này, điểm được ghi là không (0).  \nTrang 24/27",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định.  \n- Sinh viên đủ điều kiện làm khóa luận được khoa/bộ môn quản lý ngành đào tạo giao đề tài khóa luận tốt nghiệp. Căn cứ đề nghị của Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo và Trưởng P.ĐTĐH, Hiệu trưởng ra quyết định giao nhiệm vụ hướng dẫn khóa luận tốt nghiệp.  \n- Sinh viên thực hiện khóa luận tốt nghiệp trong thời gian là một học kỳ chính.\n- Sinh viên chỉ được bảo vệ khóa luận khi đã hoàn thành khóa luận và được sự đồng ý  \nbằng văn bản của cán bộ hướng dẫn.",
+          "## Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp  \n1. Mỗi năm Trường có 4 đợt xét tốt nghiệp và cấp bằng tốt nghiệp đại học, lịch xét tốt nghiệp được ghi trong kế hoạch năm học. Để được Trường xét cấp bằng tốt nghiệp, sinh viên nộp hồ sơ đề nghị xét tốt nghiệp khi đã đáp ứng đủ các điều kiện sau đây:  \n- Cho đến thời điểm xét tốt nghiệp, sinh viên không đang trong thời gian bị truy cứu  \ntrách nhiệm hình sự hoặc bị kỷ luật từ mức đình chỉ học tập trở lên.  \n- Đã hoàn thành nghĩa vụ học phí.\n- Đã hoàn thành các môn học, tích lũy đủ số tín chỉ theo đúng chương trình đào tạo.\n- Đã hoàn thành các môn học Giáo dục thể chất.\n- Có chứng chỉ Giáo dục quốc phòng-An ninh.\n- Đạt chuẩn ngoại ngữ xét tốt nghiệp.",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\n3. Làm khóa luận tốt nghiệp  \n- Vào đầu mỗi học kỳ chính, sinh viên đủ điều kiện quy định có thể đăng ký làm khóa  \nluận tốt nghiệp theo quy trình đăng ký học phần.  \n- Sinh viên chương trình tiên tiến và chương trình tài năng bắt buộc phải làm khóa luận  \ntốt nghiệp.  \n- Sinh viên chương trình chuẩn được làm khóa luận tốt nghiệp khi thỏa các yêu cầu  \nsau:  \n▪ Không được phép nợ quá 8 tín chỉ theo chương trình đào tạo.\n▪ Có ĐTBC tính đến thời điểm xét làm khóa luận tốt nghiệp tối thiểu 6,5 hoặc  \ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định."
+        ],
+        "chunk_ids": [
+          "legal/159-2024-quy-dinh-khoa-luan-tot-nghiep.md::chunk-18",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-99",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-98",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-103",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-97"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường.",
+        "expected_context": "Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường và được công bố vào đầu mỗi năm học.",
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.4878879606623277,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      },
+      {
+        "question": "Khi cán bộ phản biện đánh giá khóa luận tốt nghiệp dưới 5 điểm thì Khoa xử lý như thế nào?",
+        "question_type": "confusable",
+        "answer": "Context không cung cấp thông tin về cách xử lý của Khoa khi cán bộ phản biện đánh giá khóa luận tốt nghiệp dưới 5 điểm. Do đó, tôi không thể trả lời câu hỏi này.",
+        "contexts": [
+          "Điều 32. Chấm thực tập, khóa luận tốt nghiệp\n2. Chấm khóa luận tốt nghiệp:  \nViệc chấm kết quả khóa luận tốt nghiệp được thực hiện bởi hội đồng do khoa/bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ký quyết định thành lập. Số thành viên của hội đồng chấm khóa luận tốt nghiệp là 3 người, bao gồm: chủ tịch, ủy viên thư ký và ủy viên. Cán bộ hướng dẫn không được là thành viên hội đồng. Chủ tịch và ủy viên thư ký hội đồng không được kiêm nhiệm vai trò phản biện. Thành viên của hội đồng là giảng viên của Trường hoặc có thể mời những người có chuyên môn phù hợp ở ngoài Trường.  \nĐiểm chấm khóa luận cho theo thang điểm 10 (lẻ đến 0,5) của mỗi thành viên hội đồng, người hướng dẫn và người phản biện. Điểm tổng kết là trung bình cộng (làm tròn đến 0,1), trong đó :",
+          "Điều 32. Chấm thực tập, khóa luận tốt nghiệp\no Điểm được cho bởi các thành viên hội đồng không phải là người phản biện có  \nhệ số 1.  \no Điểm được cho bởi người hướng dẫn và người phản biện có hệ số 2.  \nCác quy định chi tiết khác về khóa luận tốt nghiệp có quy định riêng.  \n3. Kết quả chấm thực tập, khóa luận tốt nghiệp phải được công bố chậm nhất trong vòng 01  \ntuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp.",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\nbằng văn bản của cán bộ hướng dẫn.  \n- Hằng năm có 2 đợt bảo vệ khóa luận tốt nghiệp được xác định cụ thể trên kế hoạch đào tạo của Trường. Nếu hết thời gian thực hiện khóa luận theo quy định mà sinh viên không ra bảo vệ hoặc không được cán bộ hướng dẫn đồng ý cho ra bảo vệ vào đúng đợt chính thức xem như không đạt học phần này, điểm được ghi là không (0).  \nTrang 24/27",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định.  \n- Sinh viên đủ điều kiện làm khóa luận được khoa/bộ môn quản lý ngành đào tạo giao đề tài khóa luận tốt nghiệp. Căn cứ đề nghị của Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo và Trưởng P.ĐTĐH, Hiệu trưởng ra quyết định giao nhiệm vụ hướng dẫn khóa luận tốt nghiệp.  \n- Sinh viên thực hiện khóa luận tốt nghiệp trong thời gian là một học kỳ chính.\n- Sinh viên chỉ được bảo vệ khóa luận khi đã hoàn thành khóa luận và được sự đồng ý  \nbằng văn bản của cán bộ hướng dẫn.",
+          "Điều 16. Chấm thi, nhập điểm và công bố điểm\n- Trường hợp bảng điểm sai, cán bộ chấm thi gạch điểm sai, ghi lại điểm đúng kế bên và ký tên xác nhận, ghi thời gian đã chỉnh sửa điểm vào cột ghi chú. Đồng thời nhờ\nP.ĐTĐH/VPĐB cập nhật lại điểm đúng nếu cán bộ chấm thi đã quá hạn điều chỉnh điểm.\n- Tất cả các bảng điểm phải có có đầy đủ chữ ký, họ tên của cán bộ chấm thi và xác nhận của Trưởng/Phó đơn vị quản lý môn học.\nGhi chú: Việc nhập điểm khóa luận tốt nghiệp thực hiện theo qui trình riêng.\n4. Cán bộ chấm thi có trách nhiệm chấm điểm theo đúng đáp án. Điểm cho mỗi thành phần điểm được chấm theo thang điểm 10, làm tròn đến 0,5 điểm. Điểm tổng kết môn học\n(gọi tắt là điểm môn học) được làm tròn đến 0,1 điểm."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-101",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-102",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-99",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-98",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-50"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Khoa xem xét các biện pháp xử lý, trong đó có thảo luận lại về điểm đánh giá với cán bộ hướng dẫn và cán bộ phản biện; nếu đạt được sự đồng thuận thì xử lý theo quyết định đồng thuận đó.",
+        "expected_context": "Khi CBPB đánh giá đề tài KLTN của SV không đủ điều kiện để bảo vệ trước hội đồng (điểm đánh giá dưới 5), Khoa xem xét các biện pháp xử lý sau và quyết định: Thảo luận lại về điểm đánh giá với CBHD và CBPB. Nếu đạt được sự đồng thuận thì xử lý theo quyết định đồng thuận này.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.8666666666377778
+      },
+      {
+        "question": "Học bổng của chương trình tài năng được cấp theo học kỳ và một học kỳ được tính bằng bao nhiêu tháng?",
+        "question_type": "confusable",
+        "answer": "Học bổng của chương trình tài năng được cấp cho sinh viên theo từng học kỳ, và một học kỳ được tính là 5.0 tháng [Document 1].",
+        "contexts": [
+          "## Điều 13. Quy định về tài chính\n1. Học bổng sinh viên\nHọc bổng chương trình: học bổng được cấp cho sinh viên theo từng học kỳ – một học kỳ tính là 5.0 tháng. Mức học bổng hàng năm do Hiệu trưởng quyết định. Tất cả các sinh viên tài năng theo danh sách chính thức từng học kỳ đều được hưởng học bổng này.\nHọc bổng khuyến khích học tập: sinh viên tài năng được tham gia xét hưởng học bổng khuyến khích học tập theo quy định của nhà nước tương tự như các sinh viên chương trình khác (xét theo lớp).\n2. Khen thưởng sinh viên\nCăn cứ vào tình hình kinh phí và hoạt động của các lớp CTTN, Hiệu trưởng quyết định thêm các hình thức khen thưởng sau:\n− Sinh viên đạt thành tích xuất sắc trong các cuộc thi học thuật.",
+          "Điều 3. Môn học\n- Học phần tài năng: là các học phần được tổ chức nhằm tăng cường tương tác giữa giảng viên và sinh viên, khuyến khích tư duy phản biện, khả năng sáng tạo, khả năng phát triển và trình bày ý tưởng của sinh viên.  \n- Học phần tiên tiến: là các học phần được tổ chức dựa trên cơ sở của chương trình đang được áp dụng ở trường đại học tiên tiến trên thế giới đáp ứng mục tiêu của chương trình tiên tiến.  \n3. Đối với chương trình đào tạo chuyên sâu đặc thù, yêu cầu khối lượng thực tập tối thiểu là  \n8 tín chỉ.  \n4. Khoá luận tốt nghiệp là học phần đặc biệt có khối lượng tương đương 10 tín chỉ.  \nTrang 5/27",
+          "## Điều 5. Học kỳ, năm học  \n1. Học kỳ là thời gian để sinh viên hoàn thành một số học phần của chương trình đào tạo.\nMột học kỳ chính có 15 tuần thực học và 2 đến 3 tuần dành cho đánh giá hoạt động đào tạo (thi cuối kỳ, thi giữa kỳ, kiểm tra,…). Một học kỳ hè có tối thiểu 5 tuần thực học và 1 tuần thi. Căn cứ vào tình hình thực tế mỗi năm, kế hoạch giảng dạy của học kỳ có thể được điều chỉnh theo quyết định của Hiệu trưởng.  \n2. Một năm học có 2 học kỳ chính. Tùy theo điều kiện, Trường có thể tổ chức thêm học kỳ  \nhè. Việc đăng ký học phần học kỳ hè được quy định tại Điều 14 của quy chế này.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\nCTĐT có thời gian thiết kế là 3,5 năm thì học kỳ cuối cùng là học kỳ thứ 7).  \no HPTCHM: mức đơn giá học phí cho loại tín chỉ học phí học mới.\no TCHPHM: tổng số tín chỉ học phí của các môn học mới.\no HPTCHL: mức đơn giá học phí cho loại tín chỉ học phí học lại.\no TCHPHL: tổng số tín chỉ học phí của các môn học lại.\no HPTCCT: mức đơn giá học phí cho loại tín chỉ học phí học cải thiện.\no TCHPCT: tổng số tín chỉ học phí của các môn học cải thiện.\no HPGH : học phí gia hạn, được tính theo công thức sau đây với giá trị t được xác  \nđịnh cụ thể tại các thông báo của Hiệu trưởng :\nHPGH = t × HPHKC (t < 100%).",
+          "Điều 13. Quy định về tài chính\n- Các cuộc thi học thuật, khởi nghiệp - đổi mới sáng tạo, hội nghị, tạp chí và các hình thức thành tích khác chưa được liệt kê trong quy định này sẽ do BĐH cấp trường quyết định. Quy trình xem xét được dựa trên các tiêu chí minh bạch về uy tín, phạm vi ảnh hưởng, độ khó, uy tín đơn vị tổ chức, quy mô và mức độ cạnh tranh của các thành tích.\n- Điểm giải thưởng cuộc thi học thuật, giải thưởng NCKH-EUREKA, NCKH-Bộ sẽ được tính bằng nhau cho các thành viên thuộc cùng một đội, tương ứng với giải thưởng đạt được. Đồng thời, chỉ xét thành tích cho các đội có tối đa 07 thành viên.\n- Các thành tích tích lũy được tính từ thời điểm sau ngày thi học kỳ cuối cùng của học kỳ chính liền trước đến ngày thi kỳ cuối cùng của học kỳ chính đang xét."
+        ],
+        "chunk_ids": [
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-37",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-11",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-22",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-17",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-40"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Học bổng chương trình được cấp theo từng học kỳ, một học kỳ tính là 5.0 tháng.",
+        "expected_context": "Học bổng chương trình: học bổng được cấp cho sinh viên theo từng học kỳ – một học kỳ tính là 5.0 tháng. Mức học bổng hàng năm do Hiệu trưởng quyết định. Tất cả các sinh viên tài năng theo danh sách chính thức từng học kỳ đều được hưởng học bổng này.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.36347236643573994,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333332916666
+      },
+      {
+        "question": "Điểm trung bình học kỳ được dùng để làm gì?",
+        "question_type": "confusable",
+        "answer": "Điểm trung bình học kỳ (ĐTBHK) được dùng để xét học bổng, khen thưởng, và xử lý học vụ sau mỗi học kỳ [Document 1, Điều 24].",
+        "contexts": [
+          "## Điều 24. Cách quản lý điểm  \n1. Điểm trung bình học kỳ (ĐTBHK) là điểm trung bình của các học phần mà sinh viên đã đăng ký học trong học kỳ đó với trọng số là số tín chỉ của mỗi học phần (bao gồm cả những học phần không đạt). ĐTBHK được dùng để xét học bổng, khen thưởng, xử lý học vụ sau mỗi học kỳ.  \n2. Điểm trung bình chung (ĐTBC) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số tín chỉ của mỗi học phần (được tính theo điểm học phần cao nhất trong các lần học, bao gồm cả những học phần không đạt). ĐTBC được dùng để xét số tín chỉ được phép đăng ký trong học kỳ, học vượt, xét chuyển ngành/chương trình, xét điều kiện làm khóa luận tốt nghiệp.",
+          "Điều 24. Cách quản lý điểm\n3. Điểm trung bình chung tích lũy (ĐTBCTL) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số tín chỉ đã được tích lũy (đạt từ 5,0 điểm trở lên) của mỗi học phần (được tính theo điểm học phần cao nhất trong các lần học). ĐTBCTL được tính khi sinh viên đủ điều kiện tốt nghiệp, được dùng để phân loại kết quả học tập và xếp hạng tốt nghiệp.  \n4. Cách tính ĐTBHK, ĐTBC, ĐTBCTL được quy định tại Điều 26 của Quy chế này.  \n5. Kết quả học tập của học kỳ hè (nếu có) được tính chung vào học kỳ liền kề trước đó.  \nTrang 20/27  \n6. Học phần có kết quả từ 5,0 điểm trở lên được bảo lưu khi sinh viên học thêm một ngành  \nhọc mới trong Trường. Điểm bảo lưu được tính vào ĐTBC, ĐTBCTL.",
+          "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa\n(gồm các điểm được cho trong quá trình học như điểm bài tập, thuyết trình, chuyên cần, …).\nTỉ lệ các thành phần điểm và các hình thức đánh giá của mỗi thành phần điểm được ghi rõ trong Đề cương môn học. Điểm thành phần được làm tròn đến 0,5. Cán bộ giảng dạy có trách nhiệm thông báo rộng rãi đến sinh viên trong tuần đầu tiên của học kỳ về cách đánh giá môn học. Điểm học phần là điểm trung bình tính theo hệ số của các điềm thành phần, tính theo thang điểm 10 và được làm tròn đến 0,1.",
+          "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa\n1,5  \n3,0 đến cận 4,0 Từ 30 đến cận 40  \n1,0  \nKhông đạt  \nA+  \nA  \nB+  \nB  \nC  \nD+  \nD  \nXuất sắc  \nGiỏi  \nKhá  \nTrung bình khá  \nTrung bình  \nYếu  \nKém  \nTrang 18/27  \n< 3,0  \nDưới 30  \n0,0  \nF  \n2. Điểm cuối cùng để đánh giá một học phần được gọi là điểm học phần. Điểm học phần được đánh giá dựa trên kết quả học tập toàn diện của sinh viên trong suốt học kỳ đối với học phần đó. Mỗi môn học có tối đa 4 điểm thành phần: Cuối kỳ (bắt buộc phải có), Giữa kỳ,\nThực hành (bắt buộc phải có đối với những môn học có tín chỉ thực hành) và Quá trình\n(gồm các điểm được cho trong quá trình học như điểm bài tập, thuyết trình, chuyên cần, …).",
+          "## Điều 25. Cách tính điểm trung bình  \n1. ĐTBHK, ĐTBC và ĐTBCTL được tính theo công thức:  \nTrong đó:  \n+ A là ĐTBHK, ĐTBC hoặc ĐTBCTL  \n+ ai là điểm của môn học thứ i  \n+ ni là số tín chỉ học tập của môn học thứ i  \n+ n là tổng số môn học được tính.  \n2. ĐTBHK, ĐTBC và ĐTBCTL được làm tròn đến 0,01."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-81",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-82",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-73",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-72",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-84"
+        ],
+        "retrieval_method": "dense",
+        "reference": "ĐTBHK được dùng để xét học bổng, khen thưởng và xử lý học vụ. Đây là điểm trung bình của các học phần sinh viên đã đăng ký trong học kỳ với trọng số là số tín chỉ của mỗi học phần, bao gồm cả học phần không đạt.",
+        "expected_context": "Điểm trung bình học kỳ (ĐTBHK) là điểm trung bình của các học phần mà sinh viên đã đăng ký học trong học kỳ đó với trọng số là số tín chỉ của mỗi học phần (bao gồm cả những học phần không đạt). ĐTBHK được dùng để xét học bổng, khen thưởng.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7968315878094755,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998
+      },
+      {
+        "question": "Sinh viên cần đáp ứng điều kiện gì để được cấp bằng Cử nhân Tài năng?",
+        "question_type": "confusable",
+        "answer": "Để được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường Đại học Công nghệ Thông tin (UIT), sinh viên cần đáp ứng các điều kiện sau đây:\n\n1. Sinh viên phải đang là sinh viên chính thức của Chương trình Tài năng (CTTN).\n2. Sinh viên phải hoàn tất chương trình đúng hạn và đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng. Nếu sinh viên đã bảo vệ khóa luận tốt nghiệp (KLTN) đúng hạn nhưng chưa đạt chuẩn 11 đầu ra ngoại ngữ, Khoa có thể xem xét hoàn cảnh cụ thể để đề nghị Ban Đào tạo (BĐH) và trình Ban Giám hiệu (BGH) phê duyệt cho phép gia hạn tối đa 1 học kỳ để hoàn tất chương trình đào tạo (CTĐT) và được cấp bằng CTTN.\n3. Sinh viên cần có điểm KLTN từ 7.5 trở lên, điểm ĐTBTL từ 7.5 trở lên và điểm rèn luyện từ loại Khá trở lên.\n4. Sinh viên phải có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định [Document 1].",
+        "contexts": [
+          "## Điều 12. Tốt nghiệp Chương trình Tài năng\nSinh viên được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường\nĐHCNTT – ĐHQG HCM khi đạt các điều kiện được xét tốt nghiệp như sau:\n− Đang là sinh viên chính thức của CTTN.\n− Hoàn tất chương trình đúng hạn – đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng. Nếu sinh viên đã bảo vệ KLTN đúng hạn nhưng chưa đạt chuẩn  \n11 đầu ra ngoại ngữ, Khoa có thể xem xét hoàn cảnh cụ thể để đề nghị BĐH và trình\nBGH phê duyệt cho phép gia hạn tối đa 1 học kỳ để hoàn tất CTĐT và được cấp bằng CTTN.\n− Có điểm KLTN  7.5, ĐTBTL  7.5 và điểm rèn luyện từ loại Khá trở lên.\n− Có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định.",
+          "Điều 12. Tốt nghiệp Chương trình Tài năng\n− Có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định.\nCác sinh viên không đạt một trong các điều kiện nêu trên nhận bằng tốt nghiệp như sinh viên chương trình chuẩn khi đã đạt đủ các điều kiện được quy định trong quy chế đào tạo theo học chế tín chỉ của Trường; đồng thời sinh viên phải hoàn trả toàn bộ học bổng đã nhận theo Điều 13 của quy định này.",
+          "TUYỂN SINH SINH VIÊN TÀI NĂNG NĂM 2026\nNGÀNH ĐÀO TẠO – CHỈ TIÊU\n• Khoa học Máy tính: tối đa 30 sinh viên\n• An toàn Thông tin: tối đa 30 sinh viên\n• Thiết kế Vi mạch: tối đa 50 sinh viên\nĐỐI TƯỢNG ĐĂNG KÝ\nSinh viên đã trúng tuyển UIT năm 2026 thuộc chương trình chuẩn, ở tất cả các ngành và theo mọi phương thức tuyển sinh áp dụng cho khóa 2026.\nKhông áp dụng đối với Chương trình tiên tiến, chương trình giảng dạy bằng tiếng Anh và chương trình Liên kết quốc tế.\nHỒ SƠ XÉT TUYỂN\nSinh viên chuẩn bị bài luận viết tay tối đa 01 trang A4, trình bày về mục tiêu nghề nghiệp, đam mê, hiểu biết về ngành học và chương trình Tài năng, những nỗ lực của bản thân và lý do đăng ký chương trình. Có thể đính kèm các giấy khen, giấy chứng nhận thành tích khác nếu có.",
+          "# TUYỂN SINH SINH VIÊN TÀI NĂNG NĂM 2026\n21/08/2026 - 10:23\nChương trình Tuyển chọn và Phát triển Sinh viên Tài năng trình độ đại học năm 2026 chính thức nhận hồ sơ đăng ký dành cho tân sinh viên UIT khóa 2026.\nChương trình được thiết kế với nội dung đào tạo có nền tảng rộng, chuyên sâu, chú trọng phát triển tư duy sáng tạo, niềm đam mê học thuật và khả năng nghiên cứu. Sinh viên được định hướng tham gia nghiên cứu khoa học, học tập cùng đội ngũ giảng viên giàu kinh nghiệm, được ưu tiên về cơ sở vật chất và có cơ hội nhận học bổng hàng tháng. Khi tốt nghiệp, sinh viên được cấp bằng “Cử nhân tài năng” (Honors Program) của Trường Đại học Công nghệ Thông tin – ĐHQG-HCM.\nNGÀNH ĐÀO TẠO – CHỈ TIÊU\n• Khoa học Máy tính: tối đa 30 sinh viên",
+          "Điều 3. Môn học\n- Học phần tài năng: là các học phần được tổ chức nhằm tăng cường tương tác giữa giảng viên và sinh viên, khuyến khích tư duy phản biện, khả năng sáng tạo, khả năng phát triển và trình bày ý tưởng của sinh viên.  \n- Học phần tiên tiến: là các học phần được tổ chức dựa trên cơ sở của chương trình đang được áp dụng ở trường đại học tiên tiến trên thế giới đáp ứng mục tiêu của chương trình tiên tiến.  \n3. Đối với chương trình đào tạo chuyên sâu đặc thù, yêu cầu khối lượng thực tập tối thiểu là  \n8 tín chỉ.  \n4. Khoá luận tốt nghiệp là học phần đặc biệt có khối lượng tương đương 10 tín chỉ.  \nTrang 5/27"
+        ],
+        "chunk_ids": [
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-35",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-36",
+          "news/tuyen-sinh-sinh-vien-tai-nang-nam-2026.md::chunk-1",
+          "news/tuyen-sinh-sinh-vien-tai-nang-nam-2026.md::chunk-0",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-11"
+        ],
+        "retrieval_method": "dense",
+        "reference": "Sinh viên phải đang là sinh viên chính thức của chương trình tài năng và hoàn tất chương trình đúng hạn, đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng.",
+        "expected_context": "Sinh viên được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường ĐHCNTT – ĐHQG HCM khi đạt các điều kiện được xét tốt nghiệp như sau: − Đang là sinh viên chính thức của CTTN. − Hoàn tất chương trình đúng hạn – đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6132232367169775,
+        "context_recall": 1.0,
+        "context_precision": 0.999999999975
+      }
+    ],
+    "B_hybrid_rrf": [
+      {
+        "question": "Theo Quy chế đào tạo theo học chế tín chỉ của Trường ĐHCNTT, một tín chỉ học tập được quy định bằng bao nhiêu tiết học lý thuyết?",
+        "question_type": "keyword",
+        "answer": "Theo Quy chế đào tạo theo học chế tín chỉ của Trường Đại học Công nghệ Thông tin, một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết [Document 1].",
+        "contexts": [
+          "## Điều 4. Tín chỉ học tập – Tín chỉ học phí  \n1. Tín chỉ học tập:  \n- Tín chỉ học tập: là đơn vị dùng để xác định thời gian, khối lượng học tập của sinh viên và khối lượng giảng dạy của giảng viên, đồng thời là đơn vị dùng để đánh giá kết quả học tập của sinh viên dựa trên số lượng tín chỉ học tập đã tích lũy được.  \n- Một tiết học được tính quy chuẩn bằng 50 phút.\n- Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Đối với những học phần lý thuyết hoặc thực hành, thí nghiệm: để tiếp thu được một tín chỉ sinh viên phải dành ít nhất 30 giờ chuẩn bị cá nhân (tự học) và giảng viên phải dành ít nhất 30 giờ để soạn giáo án, bài tập tình huống, soạn đề cương chi tiết, chấm bài tập về nhà, bài thi, giải đáp cho sinh viên hoặc phát triển học phần.  \n- Một tín chỉ thực tập doanh nghiệp được quy định bằng 4 tuần đi thực tập doanh  \nnghiệp.  \n- Số tiết, số tín chỉ, thời gian tự học, thời gian làm việc của giảng viên, cách đánh giá  \nhọc phần được quy định cụ thể trong đề cương chi tiết của từng học phần.  \n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.",
+          "Căn cứ Quyết định số 1342/QĐ-ĐHQG, ngày 30 tháng 9 năm 2022 của Giám đốc\nĐHQG-HCM về việc ban hành Quy chế Đào tạo trình độ đại học của ĐHQG-HCM;\nCăn cứ Quyết định số 790/QĐ-ĐHCNTT, ngày 28 tháng 9 năm 2022 của Hiệu trưởng\nTrường Đại học Công nghệ Thông tin về việc ban hành Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường Đại học Công nghệ Thông tin;\nTheo đề nghị của Trưởng phòng Đào tạo Đại học.\nQUYẾT ĐỊNH:",
+          "ĐHQG-HCM về việc ban hành quy chế tổ chức và hoạt động của trường đại học thành viên và khoa trực thuộc ĐHQG-HCM;\nCăn cứ Nghị quyết số 02/NQ-HĐTĐHCNTT ngày 15 tháng 05 năm 2024 của Hội đồng\nTrường ĐH CNTT về việc ban hành Quy chế tổ chức và hoạt động của Trường ĐHCNTT;\nCăn cứ Quyết định số 790/QĐ-ĐHCNTT ngày 28 tháng 09 năm 2022 của Hiệu trưởng\nTrường ĐH CNTT về việc ban hành Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường ĐH CNTT;\nCăn cứ Quyết định số 896/QĐ-ĐHCNTT ngày 08 tháng 09 năm 2023 của Hiệu trưởng\nTrường ĐH CNTT về việc phê duyệt Đề án tuyển chọn và phát triển sinh viên tài năng trình độ đại học của Trường Đại học Công nghệ Thông tin giai đoạn 2023-2027;\nTheo đề nghị của Trưởng phòng Đào tạo Đại học.\nQUYẾT ĐỊNH:",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.  \n2. Tín chỉ học phí (TCHP): là đơn vị dùng để lượng hóa chi phí của các hoạt động giảng dạy tính cho từng học phần. Số TCHP của mỗi học phần được xác định căn cứ vào đề cương và cách thức tổ chức học phần; cụ thể như sau:  \n- Phần giảng dạy lý thuyết tại lớp: 15 tiết tương đương với 1 TCHP.\n- Phần giảng dạy thực hành, thí nghiệm, thảo luận:  \no Học phần thực hành HT1 : 1 TCTH tương đương 2 TCHP.\no Học phần thực hành HT2 : 1 TCTH tương đương 1 TCHP.  \n- Một số học phần đặc biệt được xác định số TCHP riêng theo quyết định của Hiệu trưởng gồm các loại học phần: Giáo dục quốc phòng - an ninh, Giáo dục thể chất,"
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-12",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-13",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-1",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-1",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-14"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết.",
+        "expected_context": "Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.23692141836556163,
+        "context_recall": 1.0,
+        "context_precision": 0.699999999965
+      },
+      {
+        "question": "Một tiết học được tính quy chuẩn bằng bao nhiêu phút?",
+        "question_type": "keyword",
+        "answer": "Một tiết học được tính quy chuẩn bằng 50 phút [Document 1].",
+        "contexts": [
+          "## Điều 4. Tín chỉ học tập – Tín chỉ học phí  \n1. Tín chỉ học tập:  \n- Tín chỉ học tập: là đơn vị dùng để xác định thời gian, khối lượng học tập của sinh viên và khối lượng giảng dạy của giảng viên, đồng thời là đơn vị dùng để đánh giá kết quả học tập của sinh viên dựa trên số lượng tín chỉ học tập đã tích lũy được.  \n- Một tiết học được tính quy chuẩn bằng 50 phút.\n- Một tín chỉ học tập được quy định bằng 15 tiết học lý thuyết; 30 tiết thảo luận trên lớp, thí nghiệm, thực hành tại phòng máy theo phương thức học tập trực tiếp hoặc trực tuyến hoặc 45 – 60 tiết thực tập, kiến tập, chuẩn bị khoá luận.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Đối với những học phần lý thuyết hoặc thực hành, thí nghiệm: để tiếp thu được một tín chỉ sinh viên phải dành ít nhất 30 giờ chuẩn bị cá nhân (tự học) và giảng viên phải dành ít nhất 30 giờ để soạn giáo án, bài tập tình huống, soạn đề cương chi tiết, chấm bài tập về nhà, bài thi, giải đáp cho sinh viên hoặc phát triển học phần.  \n- Một tín chỉ thực tập doanh nghiệp được quy định bằng 4 tuần đi thực tập doanh  \nnghiệp.  \n- Số tiết, số tín chỉ, thời gian tự học, thời gian làm việc của giảng viên, cách đánh giá  \nhọc phần được quy định cụ thể trong đề cương chi tiết của từng học phần.  \n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.",
+          "Điều 8. Ra đề thi và in đề thi\n2. Nội dung đề thi phải thể hiện rõ các chuẩn đầu ra cần kiểm tra theo đề cương của môn học (Tham khảo mẫu đề thi “THI-M11” tại Phụ lục). Lời văn, câu chữ phải rõ ràng, không có sai sót. Đề thi đảm bảo thời gian làm bài tối thiểu là 60 phút và tối đa là 120 phút (trường hợp khác phải có sự phê duyệt của Hiệu trưởng). Trong thời gian thi, cán bộ ra đề thi của môn thi phải có mặt để xử lý những sự cố phát sinh khi cần thiết (cán bộ ra đề thi có thể là cán bộ coi thi).  \n4\n3. Các lớp học cùng một môn học được tổ chức thi cùng thời gian, theo cùng đề thi và cùng hình thức thi. Đối với các lớp chương trình đặc biệt có thể sử dụng đề riêng hoặc tỉ lệ đánh giá khác nhưng phải được sự phê duyệt của Hiệu trưởng.",
+          "Điều 4. Tín chỉ học tập – Tín chỉ học phí\n- Sau đây tín chỉ học tập được gọi tắt là tín chỉ.  \n2. Tín chỉ học phí (TCHP): là đơn vị dùng để lượng hóa chi phí của các hoạt động giảng dạy tính cho từng học phần. Số TCHP của mỗi học phần được xác định căn cứ vào đề cương và cách thức tổ chức học phần; cụ thể như sau:  \n- Phần giảng dạy lý thuyết tại lớp: 15 tiết tương đương với 1 TCHP.\n- Phần giảng dạy thực hành, thí nghiệm, thảo luận:  \no Học phần thực hành HT1 : 1 TCTH tương đương 2 TCHP.\no Học phần thực hành HT2 : 1 TCTH tương đương 1 TCHP.  \n- Một số học phần đặc biệt được xác định số TCHP riêng theo quyết định của Hiệu trưởng gồm các loại học phần: Giáo dục quốc phòng - an ninh, Giáo dục thể chất,",
+          "CHÍNH THỨC CÔNG BỐ KẾ HOẠCH ĐĂNG KÝ HỌC PHẦN HỌC KỲ I NĂM HỌC 2026–2027\n🎓 Học kỳ I năm học 2026–2027 sẽ chính thức bắt đầu từ ngày 07/09/2026.\n📌 Lưu ý✅ Sinh viên khóa tuyển sinh năm 2026 sẽ được Nhà trường gán thời khóa biểu theo kế hoạch đào tạo mẫu và không thực hiện đăng ký học phần trong học kỳ này.✅ Không đăng ký hộ, đăng ký giữ chỗ hoặc sử dụng các công cụ hỗ trợ đăng ký học phần tự động để đảm bảo công bằng cho tất cả sinh viên.\n📖 Kế hoạch và hướng dẫn chi tiết:👉 [https://daa.uit.edu.vn](https://daa.uit.edu.vn/)\n🔗 Xem thông báo đầy đủ tại:<https://daa.uit.edu.vn/thong-bao-ke-hoach-dkhp-hk1-nam-hoc-2026-2027>\n💙 Chủ động chuẩn bị từ sớm sẽ giúp bạn có một kế hoạch học tập hiệu quả và khởi đầu học kỳ mới thật thuận lợi. Chúc các UITers đăng ký học phần thành công!"
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-12",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-13",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-13",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-14",
+          "news/chinh-thuc-cong-bo-ke-hoach-dang-ky-hoc-phan-hoc-ky-i-nam-hoc-20262027.md::chunk-1"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Một tiết học được tính quy chuẩn bằng 50 phút.",
+        "expected_context": "Một tiết học được tính quy chuẩn bằng 50 phút.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3824583191032233,
+        "context_recall": 1.0,
+        "context_precision": 0.7499999999625
+      },
+      {
+        "question": "Cán bộ ra đề thi phải soạn đề và đáp án theo thang điểm nào?",
+        "question_type": "keyword",
+        "answer": "Cán bộ ra đề thi phải soạn đề và đáp án theo thang điểm 10 kèm các điểm chi tiết. Cán bộ ra đề thi và đơn vị tổ chức thi chịu trách nhiệm về việc bảo mật đề thi và đáp án [Document 1, Điều 8].",
+        "contexts": [
+          "## Điều 8. Ra đề thi và in đề thi\n1. Đơn vị quản lý chuyên môn của môn học (Khoa/Bộ môn/Tổ phụ trách môn học) chịu trách nhiệm cử cán bộ ra đề thi và đáp án theo thang điểm 10 kèm các điểm chi tiết. Cán bộ ra đề thi và đơn vị tổ chức thi chịu trách nhiệm về việc bảo mật đề thi và đáp án. Cán bộ được phân công ra đề thi và đáp án chịu trách nhiệm về sự chính xác của đề thi, đáp án và xử lý các khiếu nại của SV sau khi thi (nếu có). Trên đề thi gốc có chữ ký của cán bộ ra đề thi; Chữ ký của người ra đề thi phải được che lại khi nhân đề thi.",
+          "Điều 8. Ra đề thi và in đề thi\n2. Nội dung đề thi phải thể hiện rõ các chuẩn đầu ra cần kiểm tra theo đề cương của môn học (Tham khảo mẫu đề thi “THI-M11” tại Phụ lục). Lời văn, câu chữ phải rõ ràng, không có sai sót. Đề thi đảm bảo thời gian làm bài tối thiểu là 60 phút và tối đa là 120 phút (trường hợp khác phải có sự phê duyệt của Hiệu trưởng). Trong thời gian thi, cán bộ ra đề thi của môn thi phải có mặt để xử lý những sự cố phát sinh khi cần thiết (cán bộ ra đề thi có thể là cán bộ coi thi).  \n4\n3. Các lớp học cùng một môn học được tổ chức thi cùng thời gian, theo cùng đề thi và cùng hình thức thi. Đối với các lớp chương trình đặc biệt có thể sử dụng đề riêng hoặc tỉ lệ đánh giá khác nhưng phải được sự phê duyệt của Hiệu trưởng.",
+          "Điều 16. Chấm thi, nhập điểm và công bố điểm\n- Trường hợp bảng điểm sai, cán bộ chấm thi gạch điểm sai, ghi lại điểm đúng kế bên và ký tên xác nhận, ghi thời gian đã chỉnh sửa điểm vào cột ghi chú. Đồng thời nhờ\nP.ĐTĐH/VPĐB cập nhật lại điểm đúng nếu cán bộ chấm thi đã quá hạn điều chỉnh điểm.\n- Tất cả các bảng điểm phải có có đầy đủ chữ ký, họ tên của cán bộ chấm thi và xác nhận của Trưởng/Phó đơn vị quản lý môn học.\nGhi chú: Việc nhập điểm khóa luận tốt nghiệp thực hiện theo qui trình riêng.\n4. Cán bộ chấm thi có trách nhiệm chấm điểm theo đúng đáp án. Điểm cho mỗi thành phần điểm được chấm theo thang điểm 10, làm tròn đến 0,5 điểm. Điểm tổng kết môn học\n(gọi tắt là điểm môn học) được làm tròn đến 0,1 điểm.",
+          "Điều 8. Ra đề thi và in đề thi\n4. Đề thi theo hình thức trắc nghiệm phải có tối thiểu 20 câu. Mỗi phòng thi có tối thiểu\n4 mã đề trắc nghiệm khác nhau được đánh mã số hoặc ký hiệu riêng để phân biệt.\n5. Đề thi theo hình thức vấn đáp gồm bộ các câu hỏi liên quan đến nội dung môn học.\nCán bộ chấm thi sử dụng các câu hỏi trong đề thi để hỏi thi SV.\n6. Trên đề thi có ghi đầy đủ thông tin về: môn thi, thời gian thi, quy định về việc sử dụng tài liệu, sử dụng máy tính. Trường hợp tổ chức thi trên máy tính tại phòng máy của Trường, đề thi phải ghi rõ quy định việc sử dụng internet, sử dụng mạng cục bộ, vị trí thư mục để nộp bài và hướng dẫn cách thức thu bài cho CBCT.",
+          "Điều 9. Nhân đề thi và đóng gói đề thi\n4. Trong quá trình nhân đề thi, cán bộ phụ trách nhân đề thi phải kiểm tra chất lượng bản in. Các bản in thử phải được thu lại và bảo quản theo chế độ tài liệu mật.\n5. Khi đóng gói đề thi phải bảo đảm đề thi đúng môn thi ghi ở phong bì đề thi, đủ số lượng đề thi cho từng phòng thi và dư 3 đề thi để dự phòng, không có tờ trắng, tờ hỏng. Cán bộ nhân đề thi đóng gói, ký tên niêm phong túi đề thi ngay sau khi nhân đề.\n6. Cán bộ có tên trong danh sách phân công nhân đề môn nào chỉ được tiếp xúc với đề thi môn đó.\n7. Tất cả cán bộ tiếp xúc với đề thi có trách nhiệm bảo mật đề thi."
+        ],
+        "chunk_ids": [
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-12",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-13",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-50",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-14",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-16"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Theo thang điểm 10, kèm các điểm chi tiết.",
+        "expected_context": "Đơn vị quản lý chuyên môn của môn học (Khoa/Bộ môn/Tổ phụ trách môn học) chịu trách nhiệm cử cán bộ ra đề thi và đáp án theo thang điểm 10 kèm các điểm chi tiết.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3551501998075008,
+        "context_recall": 1.0,
+        "context_precision": 0.8333333332916666
+      },
+      {
+        "question": "Bài thi được lưu trữ trong thời hạn bao lâu sau khi kết thúc đợt thi?",
+        "question_type": "keyword",
+        "answer": "Bài thi được lưu trữ trong thời hạn 05 tháng sau khi kết thúc đợt thi, theo quy định tại Điều 21 của Quy định tổ chức thi tập trung các môn học hệ đại học chính quy [Document 1].",
+        "contexts": [
+          "# CHƯƠNG V\nCHẾ ĐỘ LƯU TRỮ\n## Điều 21. Chế độ lưu trữ\nKhoa và các đơn vị liên quan có trách nhiệm bàn giao cho P.ĐTĐH hồ sơ của đợt thi ngay sau khi kết thúc đợt thi và bài thi trong thời hạn 05 tháng sau khi kết thúc đợt thi. Công tác lưu trữ được thực hiện theo bảng dưới đây:\n| | | | Hình thức | | | Thời hạn |\n| ---------------------------------- | ------------------ | --- | ---------- | --------------- | ----- | ---------- |\n| | Hồ sơ cần lưu trữ | | | Đơn vị lưu trữ | | |\n| | | | lưu trữ | | | lưu trữ |\n| Đề thi và đáp án (kèm thang điểm) | | | Bản giấy | | Khoa | 9 năm |\n| Bảng điểm (bảng photo) | | | Bản giấy | | Khoa | Vĩnh viễn |\nSổ bàn giao bài thi và bảng điểm giữa\n| | | | Bản giấy | | Khoa | 9 năm |\n| --- | --- | --- | --------- | --- | ----- | ------ |",
+          "Điều 16. Chấm thi, nhập điểm và công bố điểm\nBước 2: Cập nhật phân công chấm thi\n- Đơn vị quản lý môn học gửi danh sách phân công cán bộ chấm thi về P.ĐTĐH/VPĐB\n(Sử dụng theo mẫu quy định, cập nhật đầy đủ các thông tin liên quan và ký xác nhận lưu trữ bản giấy) ngay sau khi kết thúc môn thi để cập nhập bảng phân công chấm thi lên hệ thống quản lý đào tạo.\nBước 3: Nhập điểm\n- Với các môn thi giữa kỳ và cuối kỳ có tổ chức thi, có thông tin lịch thi trên hệ thống:\ntrong vòng 20 ngày tính từ mốc 01 ngày sau ngày thi của môn học.\n- Với các điểm quá trình, thực hành của môn học, thì hạn nhập điểm giống với hạn nhập điểm cuối kỳ của môn học đó.",
+          "Điều 21. Chế độ lưu trữ\n| | | | Bản giấy | | Khoa | 9 năm |\n| --- | --- | --- | --------- | --- | ----- | ------ |\nKhoa với các cá nhân/đơn vị  \n19  \n| Thông báo kế hoạch thi | Bản giấy | P.ĐTĐH | 9 năm |\n| ------------------------------- | --------- | ------- | ------ |\n| Lịch thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Phân công cán bộ ra đề thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Phân công cán bộ nhân đề thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Phân công cán bộ chấm thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Đề thi | Bản giấy | P.ĐTĐH | 9 năm |\n| Bài thi | Bản giấy | P.ĐTĐH | 9 năm |\nBản giấy,\nKhoa (đối với hoặc bản bản giấy); hoặc điện tử lưu\nP.DL&CNTT\n| Yêu cầu đồ án (tương đương đề thi) | trên hệ | | 9 năm |",
+          "Điều 20. Quy trình phúc khảo\n– Khoa chuyển phiếu phúc khảo sau khi chấm cho P.ĐTĐH/ VPĐB.\nP.ĐTĐH/VPĐB cập nhật\n| | Công bố | điểm vào hệ thống quản | | | | |\n| --- | -------- | ----------------------- | ----- | ------- | --- | --- |\n| | kết quả | lý điểm và công bố kết | | P.ĐTĐH | | |\n| 4 | | | t+20 | | | |\n| | phúc | quả cho SV. SV sẽ nhận | | / VPĐB | | |\n| | khảo | được email thông báo | | | | | kết quả phúc khảo.\nLưu trữ\n– Lưu trữ hồ sơ phúc\n| | hồ sơ | | | P.ĐTĐH | | |\n| --- | ------ | ---------------------- | ----- | ------- | --- | --- |\n| 5 | | khảo vào bộ hồ sơ thi | t+30 | | | |\n| | phúc | | | / VPĐB | | | của đợt thi.\nkhảo",
+          "## Điều 15. Chế độ lưu trữ  \n7  \n1. Toàn bộ biên bản, hồ sơ bảo vệ KLTN được Thư ký Hội đồng bàn giao cho Khoa và  \nđược các Khoa lưu trữ tối thiểu trong vòng 5 năm.  \n2. Khoa tổng hợp điểm vào danh sách các SV đã đăng ký làm KLTN (kể cả các SV không hoàn thành KLTN) do P.ĐTĐH/VPCCTĐB cung cấp. Khoa nhập danh sách điểm\nKLTN lên hệ thống, đồng thời gửi bảng điểm giấy cho P.ĐTĐH/VPCCTĐB trong thời gian 20 ngày sau ngày bảo vệ."
+        ],
+        "chunk_ids": [
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-66",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-47",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-67",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-65",
+          "legal/159-2024-quy-dinh-khoa-luan-tot-nghiep.md::chunk-24"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Bài thi được bàn giao cho P.ĐTĐH trong thời hạn 05 tháng sau khi kết thúc đợt thi.",
+        "expected_context": "Khoa và các đơn vị liên quan có trách nhiệm bàn giao cho P.ĐTĐH hồ sơ của đợt thi ngay sau khi kết thúc đợt thi và bài thi trong thời hạn 05 tháng sau khi kết thúc đợt thi.",
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.5361922152910954,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      {
+        "question": "Sau khi nhận danh sách yêu cầu phúc khảo, Khoa phải cử cán bộ chấm phúc khảo trong vòng bao nhiêu ngày?",
+        "question_type": "keyword",
+        "answer": "Sau khi nhận danh sách yêu cầu phúc khảo, Khoa phải cử cán bộ chấm phúc khảo trong vòng 7 ngày để xem xét lại bài thi và gửi kết quả phúc khảo cho Phòng Đào tạo Đại học (P.ĐTĐH) để cập nhật lại điểm trên Hệ thống quản lý điểm và công bố cho sinh viên [Document 1, Điều 19].",
+        "contexts": [
+          "# CHƯƠNG IV\nPHÚC KHẢO\n## Điều 19. Tổ chức phúc khảo và giải quyết khiếu nại về điểm thi\n1. Đối với các đợt thi CBGD có trách nhiệm công bố điểm thi cho SV theo qui định.\n2. SV theo dõi thông báo của phòng ĐTĐH để đăng ký phúc khảo trên hệ thống.\n3. P.ĐTĐH xuất danh sách phúc khảo trên hệ thống theo môn học và gửi danh sách yêu cầu phúc khảo cho đơn vị tổ chức thi.\n4. Trong vòng 7 ngày, Khoa cử cán bộ chấm thi phúc khảo để xem xét lại bài thi và gửi kết quả phúc khảo cho P.ĐTĐH để cập nhật lại điểm trên Hệ thống quản lý điểm và công bố cho SV.\n5. Cán bộ chấm thi có trách nhiệm giải đáp mọi thắc mắc của sinh viên về điểm thi trong thời hạn nhận đơn phúc khảo.\n6. Khoa chuyển bài thi và hồ sơ thi về P.ĐTĐH để lưu trữ.",
+          "Điều 20. Quy trình phúc khảo\n| --- | ---------------------- | ---- | ----- | ---------- | cầu / VPĐB\n| | gửi cho đơn vị tổ chức | | | khảo điểm |\n| --- | ----------------------- | --- | --- | ----------- | phúc thi.\nkhảo  \n18  \n– Khoa phân công cán bộ xem xét bài thi.\n– Danh sách phúc khảo phải có đầy đủ chữ ký\nKhoa, cán bộ chấm và Khoa\n| | Chấm | | | Cán bộ | P.ĐTĐ | – Danh |\n| --- | ----- | --- | --- | ------- | ----- | ------- | duyệt, ghi rõ lý do nếu\n| 3 | phúc | | t+17 | chấm | H/ | sách phúc |\n| --- | ----- | --- | ----- | ----- | --- | ---------- | có sự khác biệt điểm\n| | khảo | | | phúc | VPĐB | khảo điểm |\n| --- | ----- | --- | --- | ----- | ----- | ----------- | trước và sau khi phúc khảo khảo.\n– Khoa chuyển phiếu phúc khảo sau khi chấm cho P.ĐTĐH/ VPĐB.\nP.ĐTĐH/VPĐB cập nhật",
+          "## Điều 20. Quy trình phúc khảo\n1. Đầu vào, đầu ra, thời gian:\nĐầu vào: Danh sách chấm phúc khảo\nĐầu ra: Danh sách chấm phúc khảo (có điểm phúc khảo)  \n17  \n2. Sơ đồ tóm tắt\n| 1. Thông | | 4. Cập | | |\n| ---------- | --- | -------- | --- | --- |\n2. Gửi danh\n/HĐTĐ.P báo cho nhật điểm\n| BĐPV | sách yêu cầu | | | |\n| ---------- | ------------- | ------- | -------- | --- |\n| sinh viên | | lên hệ | 5. Lưu | | phúc khảo đăng ký\n| | | thống và | | trữ |\n| --- | --- | --------- | --- | ---- | cho đơn vị tổ\n| phúc khảo | | công bố | | |\n| ---------- | --- | -------- | --- | --- | chức thi\n| | | kết quả | | |\n| --- | --- | -------- | --- | --- |  \nK\n| H | 3. Tổ chức | | | |\n| --- | ------------ | --- | --- | --- |\n| O | chấm phúc | | | |\nA khảo",
+          "Điều 20. Quy trình phúc khảo\nK\n| H | 3. Tổ chức | | | |\n| --- | ------------ | --- | --- | --- |\n| O | chấm phúc | | | |\nA khảo  \n3. Nội dung quy trình t là ngày công bố điểm\nThời\n| | | hạn | Đơn vị | |\n| --- | --- | ---- | ------- | --- |\nQuy Đơn vị\n| Bước | Mô tả chi tiết công việc | hoàn | phối | Biểu mẫu |\n| ----- | ------------------------- | ----- | ----- | --------- | trình thực hiện\n| | | thành | hợp | |\n| --- | --- | ------ | ---- | --- |\n(ngày)\n| | – SV đăng ký phúc khảo | | | – Link |\n| --- | ----------------------- | --- | --- | -------- |\n| | trên hệ thống sau ngày | | | đăng ký |\nThông\n| | công bố điểm. | | | phúc khảo |\n| --- | -------------- | --- | --- | ---------- | báo P.ĐTĐH\n| 1 | – Chỉ phúc khảo đối với | t+5 | | https://daa. |",
+          "Điều 20. Quy trình phúc khảo\n– Khoa chuyển phiếu phúc khảo sau khi chấm cho P.ĐTĐH/ VPĐB.\nP.ĐTĐH/VPĐB cập nhật\n| | Công bố | điểm vào hệ thống quản | | | | |\n| --- | -------- | ----------------------- | ----- | ------- | --- | --- |\n| | kết quả | lý điểm và công bố kết | | P.ĐTĐH | | |\n| 4 | | | t+20 | | | |\n| | phúc | quả cho SV. SV sẽ nhận | | / VPĐB | | |\n| | khảo | được email thông báo | | | | | kết quả phúc khảo.\nLưu trữ\n– Lưu trữ hồ sơ phúc\n| | hồ sơ | | | P.ĐTĐH | | |\n| --- | ------ | ---------------------- | ----- | ------- | --- | --- |\n| 5 | | khảo vào bộ hồ sơ thi | t+30 | | | |\n| | phúc | | | / VPĐB | | | của đợt thi.\nkhảo"
+        ],
+        "chunk_ids": [
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-60",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-64",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-61",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-62",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-65"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Trong vòng 7 ngày.",
+        "expected_context": "Trong vòng 7 ngày, Khoa cử cán bộ chấm thi phúc khảo để xem xét lại bài thi và gửi kết quả phúc khảo cho P.ĐTĐH để cập nhật lại điểm trên Hệ thống quản lý điểm và công bố cho SV.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.17548422723754958,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      },
+      {
+        "question": "Sinh viên bị đuổi học trong những trường hợp nào?",
+        "question_type": "semantic",
+        "answer": "Sinh viên bị buộc thôi học trong các trường hợp sau đây:\n\n1. Điểm trung bình học kỳ (ĐTBHK) của hai học kỳ liên tiếp gần nhất bằng 0.\n2. Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại.\n3. Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành [Document 1, Điều 16]. \n\nNgoài ra, sinh viên có tên trong quyết định buộc thôi học sẽ bị xóa tên khỏi danh sách sinh viên chính thức của Trường [Document 5, Điều 16].",
+        "contexts": [
+          "Điều 16. Xử lý học vụ\nđược tự động xóa hình thức xử lý khi kết thúc thời hạn.  \n2. Đình chỉ học tập  \n- Sinh viên bị đình chỉ học tập 1 học kỳ chính nếu vi phạm lần đầu trong việc đi thi hộ  \nhoặc nhờ người thi hộ.  \nTrang 14/27  \n- Đình chỉ học tập có thời hạn: áp dụng đối với những sinh viên đang trong thời gian bị cảnh báo mà vẫn vi phạm kỷ luật hoặc vi phạm nghiêm trọng các hành vi sinh viên không được làm; sinh viên vi phạm pháp luật bị xử phạt tù nhưng cho hưởng án treo.  \n3. Thôi học  \na. Sinh viên bị buộc thôi học nếu vi phạm một trong những trường hợp sau đây:\n- ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0.\n- Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại.\n- Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành",
+          "Điều 16. Xử lý học vụ\nTrường và xã hội; hoặc vi phạm pháp luật bị xử phạt tù giam.  \nSinh viên có tên trong quyết định buộc thôi học bị xóa tên khỏi danh sách sinh viên chính thức của Trường. Trong vòng một tháng sau khi có quyết định buộc thôi học, Trường có trách nhiệm thông báo đến sinh viên theo địa chỉ email chính thức Trường đã cấp, đồng thời thông báo đến gia đình sinh viên theo địa chỉ sinh viên khai báo với Trường.  \nSinh viên thuộc diện buộc thôi học nếu có nguyện vọng chuyển từ hình thức đào tạo chính quy sang hình thức đào tạo từ xa phải làm đơn để Hiệu trưởng xét cụ thể từng trường hợp.",
+          "Điều 23. Xử lý sinh viên dự thi vi phạm quy định\n− Cảnh cáo đối với các SV vi phạm một trong các lỗi sau đây. Người bị xử lý vi phạm cảnh cáo trong khi thi môn nào sẽ bị trừ 50% số điểm thi của môn đó.\n+ Đã bị khiển trách một lần nhưng trong giờ thi môn đó vẫn tiếp tục vi phạm;\n+ Trao đổi bài làm hoặc giấy nháp cho bạn;\n+ Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau. Nếu người bị xử lý có đủ bằng chứng chứng minh mình bị quay cóp thì có thể xem xét giảm từ mức xử lý vi phạm cảnh cáo xuống mức khiển trách.\n− Đình chỉ thi đối với các SV vi phạm một trong các lỗi sau đây. Người bị xử lý vi phạm đình chỉ thi trong khi thi môn nào sẽ bị điểm không (0) môn đó; phải ra khỏi phòng thi ngay sau khi có quyết định; phải nộp bài làm và đề thi cho CBCT.",
+          "## Điều 17. Thôi học, tạm dừng học tập  \n1. Trường hợp vì hoàn cảnh cá nhân, sinh viên có thể gửi đơn xin thôi học. Trường xem  \nxét ra quyết định cho phép thôi học và xóa tên khỏi danh sách sinh viên.  \n2. Sinh viên được quyền xin tạm dừng học tập và được bảo lưu kết quả học tập trong các  \ntrường hợp sau:  \n- Được cơ quan có thẩm quyền điều động, đại diện quốc gia tham dự các kỳ thi, giải  \nđấu quốc tế.  \n- Bị ốm, thai sản hoặc tai nạn phải điều trị thời gian dài, có chứng nhận của cơ sở  \nkhám bệnh, chữa bệnh có thẩm quyền theo quy định của Bộ Y tế.  \nTrang 15/27  \n- Trường hợp vì lý do cá nhân, sinh viên phải học ít nhất một học kỳ ở Trường và không rơi vào các trường hợp bị đình chỉ học tập, có xác nhận của gia đình và giấy tờ liên quan hợp lệ.",
+          "Điều 17. Thôi học, tạm dừng học tập\n3. Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.  \n4. Sinh viên tạm dừng học tập, khi muốn trở lại học tiếp tại Trường phải hoàn tất thủ tục  \nnhập học theo quy định của Trường.  \n5. Sinh viên được xin thôi học vì lý do cá nhân, trừ trường hợp bị xem xét buộc thôi học hoặc xem xét kỷ luật. Những sinh viên đã có quyết định thôi học muốn quay trở lại học phải dự tuyển đầu vào như những thí sinh khác."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-56",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-58",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-75",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-60",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-61"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Sinh viên bị buộc thôi học nếu vi phạm một trong các trường hợp: ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0; đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại; đã hết thời gian tối đa hoàn thành khóa học nhưng chưa hoàn thành chương trình đào tạo; sau khi hết thời gian được cho thôi học; bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm; bị đình chỉ học tập lần thứ hai; vi phạm kỷ luật.",
+        "expected_context": "Sinh viên bị buộc thôi học nếu vi phạm một trong những trường hợp sau đây: - ĐTBHK hai học kỳ liên tiếp gần nhất bằng 0. - Đã hết thời hạn được cho phép bảo lưu nhưng không làm thủ tục nhập học lại. - Đã hết thời gian tối đa hoàn thành khóa học quy định nhưng vẫn chưa hoàn thành chương trình đào tạo. - Sau khi hết thời gian được cho thôi học. - Bị cảnh báo học vụ lần thứ hai liên tiếp và vẫn tái phạm. - Bị đình chỉ học tập lần thứ hai.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.4030049075765653,
+        "context_recall": 0.42857142857142855,
+        "context_precision": 0.8666666666377778
+      },
+      {
+        "question": "Khi nào sinh viên bị nhắc nhở vì kết quả học tập kém?",
+        "question_type": "semantic",
+        "answer": "Sinh viên sẽ bị nhắc nhở vì kết quả học tập kém khi vi phạm một trong những trường hợp sau đây: không hoàn thành nghĩa vụ học phí đúng quy định, có điểm trung bình học kỳ (ĐTBHK) dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0. Thời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo và sinh viên sẽ được tự động xóa hình thức xử lý khi kết thúc thời hạn này [Document 1, Điều 16].",
+        "contexts": [
+          "## Điều 16. Xử lý học vụ  \nXử lý học vụ nhằm giúp cho sinh viên lưu ý, điều chỉnh kế hoạch học tập và thái độ học tập để có thể tốt nghiệp đúng thời hạn quy định. Hằng năm, Trường tiến hành xử lý học vụ theo 2 đợt: sau học kỳ 1 và sau học kỳ hè. Kết quả học tập của học kỳ hè được tính chung vào kết quả học tập học kỳ 2 của năm học tương ứng để xem xét xử lý học vụ.  \n1. Cảnh báo học vụ  \nSinh viên bị cảnh báo học vụ nếu vi phạm một trong những trường hợp sau đây:  \n- Không hoàn thành nghĩa vụ học phí đúng quy định.\n- Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới  \n4,0.  \nThời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo. Sinh viên sẽ  \nđược tự động xóa hình thức xử lý khi kết thúc thời hạn.  \n2. Đình chỉ học tập",
+          "Điều 23. Xử lý sinh viên dự thi vi phạm quy định\n− Cảnh cáo đối với các SV vi phạm một trong các lỗi sau đây. Người bị xử lý vi phạm cảnh cáo trong khi thi môn nào sẽ bị trừ 50% số điểm thi của môn đó.\n+ Đã bị khiển trách một lần nhưng trong giờ thi môn đó vẫn tiếp tục vi phạm;\n+ Trao đổi bài làm hoặc giấy nháp cho bạn;\n+ Chép bài của người khác. Những bài thi đã có kết luận là giống nhau thì xử lý như nhau. Nếu người bị xử lý có đủ bằng chứng chứng minh mình bị quay cóp thì có thể xem xét giảm từ mức xử lý vi phạm cảnh cáo xuống mức khiển trách.\n− Đình chỉ thi đối với các SV vi phạm một trong các lỗi sau đây. Người bị xử lý vi phạm đình chỉ thi trong khi thi môn nào sẽ bị điểm không (0) môn đó; phải ra khỏi phòng thi ngay sau khi có quyết định; phải nộp bài làm và đề thi cho CBCT.",
+          "## Điều 17. Thôi học, tạm dừng học tập  \n1. Trường hợp vì hoàn cảnh cá nhân, sinh viên có thể gửi đơn xin thôi học. Trường xem  \nxét ra quyết định cho phép thôi học và xóa tên khỏi danh sách sinh viên.  \n2. Sinh viên được quyền xin tạm dừng học tập và được bảo lưu kết quả học tập trong các  \ntrường hợp sau:  \n- Được cơ quan có thẩm quyền điều động, đại diện quốc gia tham dự các kỳ thi, giải  \nđấu quốc tế.  \n- Bị ốm, thai sản hoặc tai nạn phải điều trị thời gian dài, có chứng nhận của cơ sở  \nkhám bệnh, chữa bệnh có thẩm quyền theo quy định của Bộ Y tế.  \nTrang 15/27  \n- Trường hợp vì lý do cá nhân, sinh viên phải học ít nhất một học kỳ ở Trường và không rơi vào các trường hợp bị đình chỉ học tập, có xác nhận của gia đình và giấy tờ liên quan hợp lệ.",
+          "Điều 3. Môn học\n- Học phần học lại: là học phần sinh viên đã học nhưng kết quả chưa đạt (điểm nhỏ  \nhơn 5), sinh viên phải đăng ký học lại học phần đó nếu là học phần bắt buộc.  \n- Học phần học cải thiện: là học phần sinh viên đã học có kết quả đạt (từ 5 điểm trở lên), nhưng muốn đăng ký học lại. Sinh viên chỉ được đăng ký học cải thiện theo quy định tại Khoản 3 Điều 14 của quy chế này.  \n- Học phần điều kiện: là các học phần sinh viên bắt buộc phải học như giáo dục thể chất, giáo dục quốc phòng - an ninh, có kết quả đánh giá không tính vào điểm trung bình chung học kỳ, điểm trung bình chung tích lũy.",
+          "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa\n1,5  \n3,0 đến cận 4,0 Từ 30 đến cận 40  \n1,0  \nKhông đạt  \nA+  \nA  \nB+  \nB  \nC  \nD+  \nD  \nXuất sắc  \nGiỏi  \nKhá  \nTrung bình khá  \nTrung bình  \nYếu  \nKém  \nTrang 18/27  \n< 3,0  \nDưới 30  \n0,0  \nF  \n2. Điểm cuối cùng để đánh giá một học phần được gọi là điểm học phần. Điểm học phần được đánh giá dựa trên kết quả học tập toàn diện của sinh viên trong suốt học kỳ đối với học phần đó. Mỗi môn học có tối đa 4 điểm thành phần: Cuối kỳ (bắt buộc phải có), Giữa kỳ,\nThực hành (bắt buộc phải có đối với những môn học có tín chỉ thực hành) và Quá trình\n(gồm các điểm được cho trong quá trình học như điểm bài tập, thuyết trình, chuyên cần, …)."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-55",
+          "legal/1139-2022-to-chuc-thi-tap-trung.md::chunk-75",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-60",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-10",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-72"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Sinh viên bị cảnh báo học vụ nếu không hoàn thành nghĩa vụ học phí đúng quy định, hoặc có ĐTBHK dưới 3,0, hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0.",
+        "expected_context": "Sinh viên bị cảnh báo học vụ nếu vi phạm một trong những trường hợp sau đây: - Không hoàn thành nghĩa vụ học phí đúng quy định. - Có ĐTBHK dưới 3,0 hoặc điểm trung bình của liên tiếp 2 học kỳ gần nhất đều dưới 4,0. Thời hạn cảnh báo học vụ kéo dài trong một học kỳ chính tiếp theo.",
+        "faithfulness": 0.8333333333333334,
+        "answer_relevancy": 0.33963573254278295,
+        "context_recall": 1.0,
+        "context_precision": 0.699999999965
+      },
+      {
+        "question": "Sinh viên được nghỉ học tạm thời tối đa bao lâu?",
+        "question_type": "semantic",
+        "answer": "Sinh viên được nghỉ học tạm thời tối đa là hai học kỳ chính liên tiếp, thời gian này sẽ được tính vào thời gian tối đa hoàn thành khóa học theo quy định của Trường, ngoại trừ trường hợp được điều động vào lực lượng vũ trang [Document 1, Điều 17].",
+        "contexts": [
+          "Điều 17. Thôi học, tạm dừng học tập\n3. Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.  \n4. Sinh viên tạm dừng học tập, khi muốn trở lại học tiếp tại Trường phải hoàn tất thủ tục  \nnhập học theo quy định của Trường.  \n5. Sinh viên được xin thôi học vì lý do cá nhân, trừ trường hợp bị xem xét buộc thôi học hoặc xem xét kỷ luật. Những sinh viên đã có quyết định thôi học muốn quay trở lại học phải dự tuyển đầu vào như những thí sinh khác.",
+          "Điều 16. Xử lý học vụ\nb. Sinh viên đã hết thời gian tối đa theo Điều 6 của Quy chế này, đã hoàn thành các học phần trong chương trình đào tạo, chỉ còn thiếu chứng chỉ Giáo dục quốc phòng-an ninh hoặc chứng chỉ/chứng nhận ngoại ngữ xét công nhận tốt nghiệp thì được Trường xem xét cho thôi học; Trong thời hạn 03 năm tính từ khi thôi học, sinh viên phải hoàn thiện các điều kiện còn thiếu để đề nghị xét công nhận tốt nghiệp.  \nSinh viên chưa hết thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của Quy chế này, đã hoàn thành các học phần trong chương trình đào tạo có nguyện vọng xin thôi học theo diện này thì nộp đơn xin thôi học cho P.ĐTĐH.",
+          "Điều 34. Cấp bằng tốt nghiệp\n- Có số tín chỉ học lại vượt quá 5% tổng số tín chỉ toàn khóa.\n- Điểm rèn luyện toàn khóa học < 75 điểm.  \n3. Kết quả học tập của sinh viên phải được ghi vào bảng điểm theo từng học phần. Trong  \nbảng điểm ghi rõ chuyên ngành (nếu có) và điểm rèn luyện toàn khóa học.  \n4. Những sinh viên không đủ điều kiện cấp bằng tốt nghiệp nhưng chưa hết thời gian tối đa được phép học, được bảo lưu các học phần có kết quả đạt. Trong thời gian tối đa được phép học như quy định tại Khoản 2, Điều 6 của Quy chế này, sinh viên được đăng ký học lại những học phần chưa đạt hoặc chưa học.  \n5. Trường hợp sinh viên được cho thôi học theo mục b Khoản 3 Điều 16 của quy chế này sinh viên được hoàn thiện các điều kiện còn thiếu và đề nghị xét công nhận tốt nghiệp.",
+          "## Điều 17. Thôi học, tạm dừng học tập  \n1. Trường hợp vì hoàn cảnh cá nhân, sinh viên có thể gửi đơn xin thôi học. Trường xem  \nxét ra quyết định cho phép thôi học và xóa tên khỏi danh sách sinh viên.  \n2. Sinh viên được quyền xin tạm dừng học tập và được bảo lưu kết quả học tập trong các  \ntrường hợp sau:  \n- Được cơ quan có thẩm quyền điều động, đại diện quốc gia tham dự các kỳ thi, giải  \nđấu quốc tế.  \n- Bị ốm, thai sản hoặc tai nạn phải điều trị thời gian dài, có chứng nhận của cơ sở  \nkhám bệnh, chữa bệnh có thẩm quyền theo quy định của Bộ Y tế.  \nTrang 15/27  \n- Trường hợp vì lý do cá nhân, sinh viên phải học ít nhất một học kỳ ở Trường và không rơi vào các trường hợp bị đình chỉ học tập, có xác nhận của gia đình và giấy tờ liên quan hợp lệ.",
+          "Điều 14. Đăng ký học tập\n1. Số tín chỉ tối thiểu, tối đa  \nSố tín chỉ tối thiểu, tối đa được tính bao gồm số các tín chỉ đăng ký tại Trường hoặc  \nCSĐT khác.  \na) Trong học kỳ chính:  \n- Số tín chỉ đăng ký học n trong mỗi học kỳ chính (bao gồm học lại, cải thiện và học mới) thỏa điều kiện 14 ≤ n ≤ 24. Sinh viên có ĐTBC ≥ 8,0 đến thời điểm đăng ký, được phép đăng ký tối đa 30 tín chỉ.  \n- Đối với những sinh viên còn phải học ít hơn 14 tín chỉ theo chương trình đào tạo của  \nngành, khóa học tương ứng thì không áp dụng quy định số tín chỉ tối thiểu.  \n- Sinh viên không ĐKHP hoặc bị hủy ĐKHP thì xem như số tín chỉ học trong học kỳ  \nđó bằng 0.  \nb) Trong học kỳ hè:  \n- Tổng số tín chỉ đăng ký không được vượt quá 12 tín chỉ."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-61",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-59",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-107",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-60",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-48"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, và được tính vào thời gian tối đa hoàn thành khóa học.",
+        "expected_context": "Thời gian tạm dừng học tập từ một đến tối đa hai học kỳ chính liên tiếp, được tính vào thời gian tối đa hoàn thành khóa học quy định tại Điều 6 của quy chế này, ngoại trừ trường hợp được điều động vào lực lượng vũ trang.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.8802244531972881,
+        "context_recall": 1.0,
+        "context_precision": 0.999999999975
+      },
+      {
+        "question": "Nếu sinh viên chưa đạt môn tiếng Anh sau hai học kỳ đầu thì bị hạn chế điều gì?",
+        "question_type": "semantic",
+        "answer": "Nếu sinh viên chưa đạt môn tiếng Anh sau hai học kỳ đầu, sinh viên sẽ chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn. Quy định này áp dụng cho sinh viên chương trình CTC, CTTN và CTTT [Document 2, Document 5].",
+        "contexts": [
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\nb) Sau 3 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL04. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nc) Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL05. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.",
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\nc) Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt chuẩn đầu ra để xét tốt nghiệp (theo Bảng 6 của Quy định này). Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\n3. Đối với sinh viên CTTT:\na) Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL03. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nb) Sau 3 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong",
+          "## Điều 11. Chuẩn quá trình về ngoại ngữ\n1. Đối với sinh viên CTC, CTTN:\na) Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học PET01 hoặc IEL01. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nb) Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học PET02 hoặc IEL02. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\n2. Đối với sinh viên chương trình CTA:",
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\n2. Đối với sinh viên chương trình CTA:\na) Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL04. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ  \n7 ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\nb) Sau 3 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong\nCTĐT là môn học IEL05. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.",
+          "Điều 11. Chuẩn quá trình về ngoại ngữ\nd) Sau 5 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt chuẩn đầu ra để xét tốt nghiệp (theo Bảng 5 của Quy định này). Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn.\n4. Đối với sinh viên ngành Công nghệ Thông tin chương trình Việt - Nhật: Sau 4 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn Tiếng Nhật 2 (mã môn học JAN02) hoặc có chứng chỉ tương đương JLPT N5 hoặc NAT-TEST N5. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt chuẩn."
+        ],
+        "chunk_ids": [
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-35",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-34",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-32",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-33",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-36"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ, bao gồm cả đăng ký học lại hoặc cải thiện, cho đến khi đạt.",
+        "expected_context": "Sau 2 học kỳ chính kể từ thời điểm nhập học, sinh viên phải đạt môn học tiếng Anh trong CTĐT là môn học PET01 hoặc IEL01. Nếu chưa đạt thì sinh viên chỉ được đăng ký tối đa 16 tín chỉ ngoài các môn học ngoại ngữ (bao gồm cả đăng ký học lại hoặc cải thiện) cho đến khi đạt.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5091193611595072,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999998
+      },
+      {
+        "question": "Tài liệu học tập được số hóa dùng cho dạy học trực tuyến được gọi là gì?",
+        "question_type": "semantic",
+        "answer": "Tài liệu học tập được số hóa dùng cho dạy học trực tuyến được gọi là \"học liệu điện tử\". Học liệu điện tử là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính, có nội dung đáp ứng chuẩn đầu ra của một môn học và bao gồm video bài giảng là thành phần bắt buộc phải có [Document 1, Điều 2].",
+        "contexts": [
+          "## Điều 2. Giải thích từ ngữ  \n1. Học liệu điện tử: là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính (văn bản, âm thanh, hình ảnh, video, đồ họa, …), được cấu trúc theo kịch bản dạy và học nhất định, có nội dung đáp ứng chuẩn đầu ra của một môn học. Video bài giảng là thành phần bắt buộc phải có của học liệu điện tử.\n2. Phương thức dạy học trực tiếp: là phương thức dạy và học có sự gặp mặt trực tiếp giữa giảng viên và sinh viên.",
+          "Điều 2. Giải thích từ ngữ\n2. Phương thức dạy học trực tiếp: là phương thức dạy và học có sự gặp mặt trực tiếp giữa giảng viên và sinh viên.\n3. Phương thức dạy học trực tuyến (DHTT): là phương thức dạy và học thông qua phần mềm ứng dụng trên môi trường mạng để thực hiện việc giảng dạy và học tập, qua đó sinh viên có thể tự học mọi lúc mọi nơi với các học liệu điện tử; sinh viên có thể trao đổi với nhau và với giảng viên thông qua các phần mềm ứng dụng trên môi trường mạng.\n4. Phương thức dạy học kết hợp (DHKH): là phương thức dạy và học có sự phối hợp một cách hợp lý, có chủ đích giữa phương thức dạy học trực tuyến với phương thức dạy học trực tiếp.",
+          "## Điều 1.\n## Điều 2.\n## Điều 3.\n## Điều 4.\n## Điều 5.\n## Điều 6.\n## Điều 7.\n## Điều 8.\n## Điều 9.\n## Điều 10.\n## Điều 11.\n## Điều 12.\n## Điều 13.\n## Điều 14.\n## Điều 15.  \n2\n## Điều 16.  \n3\n# CHƯƠNG I. – NHỮNG QUY ĐỊNH CHUNG  \n## Điều 1. Phạm vi điều chỉnh và đối tượng áp dụng  \n1. Văn bản này quy định về việc dạy và học theo phương thức trực tuyến (DHTT) và phương thức kết hợp (DHKH) cho hệ đại học chính quy của Trường Đại học\nCông nghệ Thông tin – ĐHQG.HCM (gọi tắt là Trường).\n2. Quy định này áp dụng với các đơn vị và cá nhân có liên quan đến việc dạy và học theo phương thức DHTT, DHKH tại Trường.",
+          "Điều 28. Ứng dụng công nghệ thông tin trong tổ chức đào tạo\n4. Tổ chức giảng dạy và học theo phương thức trực tuyến thực hiện theo quy định giảng dạy  \ntrực tuyến của Trường.",
+          "## Điều 9. Sử dụng học liệu điện tử  \nHọc liệu điện tử của Trường được:  \n1. Cung cấp cho sinh viên có đăng ký môn học để sử dụng trong học tập hoặc tham  \nkhảo.  \n2. Cung cấp cho giảng viên mới công tác tại trường để tham khảo nhằm mục đích  \nbồi dưỡng giảng viên.  \n3. Cung cấp cho giảng viên được phân công dạy môn học để sử dụng trong giảng  \ndạy."
+        ],
+        "chunk_ids": [
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-6",
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-7",
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-5",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-91",
+          "legal/196-2023-day-hoc-truc-tuyen-ket-hop.md::chunk-18"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Được gọi là học liệu điện tử, trong đó video bài giảng là thành phần bắt buộc phải có.",
+        "expected_context": "Học liệu điện tử: là các tài liệu học tập được số hóa theo các định dạng đa phương tiện trên máy tính (văn bản, âm thanh, hình ảnh, video, đồ họa, …), được cấu trúc theo kịch bản dạy và học nhất định, có nội dung đáp ứng chuẩn đầu ra của một môn học. Video bài giảng là thành phần bắt buộc phải có của học liệu điện tử.",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.42010984517980615,
+        "context_recall": 1.0,
+        "context_precision": 0.8666666666377778
+      },
+      {
+        "question": "Mỗi năm Trường tổ chức bao nhiêu đợt bảo vệ khóa luận tốt nghiệp?",
+        "question_type": "confusable",
+        "answer": "Trường Đại học Công nghệ Thông tin (UIT) tổ chức 2 đợt bảo vệ khóa luận tốt nghiệp mỗi năm theo kế hoạch chung của Trường, và thông tin này được công bố vào đầu mỗi năm học [Document 1, Điều 12].",
+        "contexts": [
+          "## Điều 12. Tổ chức bảo vệ KLTN  \n1. Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường và được công bố vào đầu mỗi năm học. Khoa đề nghị thời gian tổ chức Hội đồng và gởi về\nP.ĐTĐH/VPCCTĐB chậm nhất 7 ngày sau thời hạn thực hiện KLTN đã hết.  \n2. Khoa gửi danh sách SV đủ điều kiện bảo vệ KLTN trước Hội đồng cho P.\nĐTĐH/VPCCTĐB. Căn cứ đề nghị của Trưởng P.ĐTĐH và Trưởng khoa, Hiệu trưởng ra quyết định thành lập Hội đồng bảo vệ KLTN cho SV.  \n3. Các thành viên Hội đồng phải có mặt đầy đủ khi Hội đồng họp đánh giá các KLTN.  \n4. CBHD và CBPB phải gửi bản nhận xét bằng văn bản có chữ ký kèm ý kiến đánh giá xếp loại và điểm cụ thể dành cho KLTN cho thư ký Hội đồng trước khi Hội đồng bắt đầu làm việc.",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\nbằng văn bản của cán bộ hướng dẫn.  \n- Hằng năm có 2 đợt bảo vệ khóa luận tốt nghiệp được xác định cụ thể trên kế hoạch đào tạo của Trường. Nếu hết thời gian thực hiện khóa luận theo quy định mà sinh viên không ra bảo vệ hoặc không được cán bộ hướng dẫn đồng ý cho ra bảo vệ vào đúng đợt chính thức xem như không đạt học phần này, điểm được ghi là không (0).  \nTrang 24/27",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định.  \n- Sinh viên đủ điều kiện làm khóa luận được khoa/bộ môn quản lý ngành đào tạo giao đề tài khóa luận tốt nghiệp. Căn cứ đề nghị của Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo và Trưởng P.ĐTĐH, Hiệu trưởng ra quyết định giao nhiệm vụ hướng dẫn khóa luận tốt nghiệp.  \n- Sinh viên thực hiện khóa luận tốt nghiệp trong thời gian là một học kỳ chính.\n- Sinh viên chỉ được bảo vệ khóa luận khi đã hoàn thành khóa luận và được sự đồng ý  \nbằng văn bản của cán bộ hướng dẫn.",
+          "Điều 32. Chấm thực tập, khóa luận tốt nghiệp\n2. Chấm khóa luận tốt nghiệp:  \nViệc chấm kết quả khóa luận tốt nghiệp được thực hiện bởi hội đồng do khoa/bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ký quyết định thành lập. Số thành viên của hội đồng chấm khóa luận tốt nghiệp là 3 người, bao gồm: chủ tịch, ủy viên thư ký và ủy viên. Cán bộ hướng dẫn không được là thành viên hội đồng. Chủ tịch và ủy viên thư ký hội đồng không được kiêm nhiệm vai trò phản biện. Thành viên của hội đồng là giảng viên của Trường hoặc có thể mời những người có chuyên môn phù hợp ở ngoài Trường.  \nĐiểm chấm khóa luận cho theo thang điểm 10 (lẻ đến 0,5) của mỗi thành viên hội đồng, người hướng dẫn và người phản biện. Điểm tổng kết là trung bình cộng (làm tròn đến 0,1), trong đó :",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\n3. Làm khóa luận tốt nghiệp  \n- Vào đầu mỗi học kỳ chính, sinh viên đủ điều kiện quy định có thể đăng ký làm khóa  \nluận tốt nghiệp theo quy trình đăng ký học phần.  \n- Sinh viên chương trình tiên tiến và chương trình tài năng bắt buộc phải làm khóa luận  \ntốt nghiệp.  \n- Sinh viên chương trình chuẩn được làm khóa luận tốt nghiệp khi thỏa các yêu cầu  \nsau:  \n▪ Không được phép nợ quá 8 tín chỉ theo chương trình đào tạo.\n▪ Có ĐTBC tính đến thời điểm xét làm khóa luận tốt nghiệp tối thiểu 6,5 hoặc  \ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định."
+        ],
+        "chunk_ids": [
+          "legal/159-2024-quy-dinh-khoa-luan-tot-nghiep.md::chunk-18",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-99",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-98",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-101",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-97"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường.",
+        "expected_context": "Hằng năm Trường có 2 đợt bảo vệ khóa luận tốt nghiệp theo kế hoạch chung của Trường và được công bố vào đầu mỗi năm học.",
+        "faithfulness": 0.6666666666666666,
+        "answer_relevancy": 0.4954776330574598,
+        "context_recall": 1.0,
+        "context_precision": 0.99999999995
+      },
+      {
+        "question": "Khi cán bộ phản biện đánh giá khóa luận tốt nghiệp dưới 5 điểm thì Khoa xử lý như thế nào?",
+        "question_type": "confusable",
+        "answer": "Trong context được cung cấp, không có thông tin nào đề cập đến việc xử lý của Khoa khi cán bộ phản biện đánh giá khóa luận tốt nghiệp dưới 5 điểm. Do đó, tôi không thể trả lời câu hỏi này.",
+        "contexts": [
+          "Điều 32. Chấm thực tập, khóa luận tốt nghiệp\n2. Chấm khóa luận tốt nghiệp:  \nViệc chấm kết quả khóa luận tốt nghiệp được thực hiện bởi hội đồng do khoa/bộ môn quản lý ngành đào tạo đề nghị và Hiệu trưởng ký quyết định thành lập. Số thành viên của hội đồng chấm khóa luận tốt nghiệp là 3 người, bao gồm: chủ tịch, ủy viên thư ký và ủy viên. Cán bộ hướng dẫn không được là thành viên hội đồng. Chủ tịch và ủy viên thư ký hội đồng không được kiêm nhiệm vai trò phản biện. Thành viên của hội đồng là giảng viên của Trường hoặc có thể mời những người có chuyên môn phù hợp ở ngoài Trường.  \nĐiểm chấm khóa luận cho theo thang điểm 10 (lẻ đến 0,5) của mỗi thành viên hội đồng, người hướng dẫn và người phản biện. Điểm tổng kết là trung bình cộng (làm tròn đến 0,1), trong đó :",
+          "Điều 32. Chấm thực tập, khóa luận tốt nghiệp\no Điểm được cho bởi các thành viên hội đồng không phải là người phản biện có  \nhệ số 1.  \no Điểm được cho bởi người hướng dẫn và người phản biện có hệ số 2.  \nCác quy định chi tiết khác về khóa luận tốt nghiệp có quy định riêng.  \n3. Kết quả chấm thực tập, khóa luận tốt nghiệp phải được công bố chậm nhất trong vòng 01  \ntuần sau ngày báo cáo thực tập/bảo vệ khóa luận tốt nghiệp.",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định.  \n- Sinh viên đủ điều kiện làm khóa luận được khoa/bộ môn quản lý ngành đào tạo giao đề tài khóa luận tốt nghiệp. Căn cứ đề nghị của Trưởng khoa/Trưởng bộ môn quản lý ngành đào tạo và Trưởng P.ĐTĐH, Hiệu trưởng ra quyết định giao nhiệm vụ hướng dẫn khóa luận tốt nghiệp.  \n- Sinh viên thực hiện khóa luận tốt nghiệp trong thời gian là một học kỳ chính.\n- Sinh viên chỉ được bảo vệ khóa luận khi đã hoàn thành khóa luận và được sự đồng ý  \nbằng văn bản của cán bộ hướng dẫn.",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\nbằng văn bản của cán bộ hướng dẫn.  \n- Hằng năm có 2 đợt bảo vệ khóa luận tốt nghiệp được xác định cụ thể trên kế hoạch đào tạo của Trường. Nếu hết thời gian thực hiện khóa luận theo quy định mà sinh viên không ra bảo vệ hoặc không được cán bộ hướng dẫn đồng ý cho ra bảo vệ vào đúng đợt chính thức xem như không đạt học phần này, điểm được ghi là không (0).  \nTrang 24/27",
+          "Điều 31. Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp\n3. Làm khóa luận tốt nghiệp  \n- Vào đầu mỗi học kỳ chính, sinh viên đủ điều kiện quy định có thể đăng ký làm khóa  \nluận tốt nghiệp theo quy trình đăng ký học phần.  \n- Sinh viên chương trình tiên tiến và chương trình tài năng bắt buộc phải làm khóa luận  \ntốt nghiệp.  \n- Sinh viên chương trình chuẩn được làm khóa luận tốt nghiệp khi thỏa các yêu cầu  \nsau:  \n▪ Không được phép nợ quá 8 tín chỉ theo chương trình đào tạo.\n▪ Có ĐTBC tính đến thời điểm xét làm khóa luận tốt nghiệp tối thiểu 6,5 hoặc  \ncao hơn theo yêu cầu cụ thể của khoa/bộ môn quản lý ngành đào tạo.  \n▪ Trường hợp đặc biệt do Hiệu trưởng quyết định."
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-101",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-102",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-98",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-99",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-97"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Khoa xem xét các biện pháp xử lý, trong đó có thảo luận lại về điểm đánh giá với cán bộ hướng dẫn và cán bộ phản biện; nếu đạt được sự đồng thuận thì xử lý theo quyết định đồng thuận đó.",
+        "expected_context": "Khi CBPB đánh giá đề tài KLTN của SV không đủ điều kiện để bảo vệ trước hội đồng (điểm đánh giá dưới 5), Khoa xem xét các biện pháp xử lý sau và quyết định: Thảo luận lại về điểm đánh giá với CBHD và CBPB. Nếu đạt được sự đồng thuận thì xử lý theo quyết định đồng thuận này.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 0.8666666666377778
+      },
+      {
+        "question": "Học bổng của chương trình tài năng được cấp theo học kỳ và một học kỳ được tính bằng bao nhiêu tháng?",
+        "question_type": "confusable",
+        "answer": "Học bổng của chương trình tài năng được cấp cho sinh viên theo từng học kỳ, và một học kỳ được tính là 5.0 tháng [Document 1].",
+        "contexts": [
+          "## Điều 13. Quy định về tài chính\n1. Học bổng sinh viên\nHọc bổng chương trình: học bổng được cấp cho sinh viên theo từng học kỳ – một học kỳ tính là 5.0 tháng. Mức học bổng hàng năm do Hiệu trưởng quyết định. Tất cả các sinh viên tài năng theo danh sách chính thức từng học kỳ đều được hưởng học bổng này.\nHọc bổng khuyến khích học tập: sinh viên tài năng được tham gia xét hưởng học bổng khuyến khích học tập theo quy định của nhà nước tương tự như các sinh viên chương trình khác (xét theo lớp).\n2. Khen thưởng sinh viên\nCăn cứ vào tình hình kinh phí và hoạt động của các lớp CTTN, Hiệu trưởng quyết định thêm các hình thức khen thưởng sau:\n− Sinh viên đạt thành tích xuất sắc trong các cuộc thi học thuật.",
+          "## Điều 12. Tốt nghiệp Chương trình Tài năng\nSinh viên được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường\nĐHCNTT – ĐHQG HCM khi đạt các điều kiện được xét tốt nghiệp như sau:\n− Đang là sinh viên chính thức của CTTN.\n− Hoàn tất chương trình đúng hạn – đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng. Nếu sinh viên đã bảo vệ KLTN đúng hạn nhưng chưa đạt chuẩn  \n11 đầu ra ngoại ngữ, Khoa có thể xem xét hoàn cảnh cụ thể để đề nghị BĐH và trình\nBGH phê duyệt cho phép gia hạn tối đa 1 học kỳ để hoàn tất CTĐT và được cấp bằng CTTN.\n− Có điểm KLTN  7.5, ĐTBTL  7.5 và điểm rèn luyện từ loại Khá trở lên.\n− Có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định.",
+          "Điều 13. Quy định về tài chính\n- Các cuộc thi học thuật, khởi nghiệp - đổi mới sáng tạo, hội nghị, tạp chí và các hình thức thành tích khác chưa được liệt kê trong quy định này sẽ do BĐH cấp trường quyết định. Quy trình xem xét được dựa trên các tiêu chí minh bạch về uy tín, phạm vi ảnh hưởng, độ khó, uy tín đơn vị tổ chức, quy mô và mức độ cạnh tranh của các thành tích.\n- Điểm giải thưởng cuộc thi học thuật, giải thưởng NCKH-EUREKA, NCKH-Bộ sẽ được tính bằng nhau cho các thành viên thuộc cùng một đội, tương ứng với giải thưởng đạt được. Đồng thời, chỉ xét thành tích cho các đội có tối đa 07 thành viên.\n- Các thành tích tích lũy được tính từ thời điểm sau ngày thi học kỳ cuối cùng của học kỳ chính liền trước đến ngày thi kỳ cuối cùng của học kỳ chính đang xét.",
+          "Điều 12. Tốt nghiệp Chương trình Tài năng\n− Có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định.\nCác sinh viên không đạt một trong các điều kiện nêu trên nhận bằng tốt nghiệp như sinh viên chương trình chuẩn khi đã đạt đủ các điều kiện được quy định trong quy chế đào tạo theo học chế tín chỉ của Trường; đồng thời sinh viên phải hoàn trả toàn bộ học bổng đã nhận theo Điều 13 của quy định này.",
+          "## Điều 6. Khoá học  \n1. Khóa học là thời gian thiết kế để sinh viên hoàn thành chương trình giáo dục của một  \nngành chuyên môn ở trình độ đại học.  \na) Đào tạo trình độ đại học được thực hiện từ 3 đến 5 năm đối với văn bằng 1; từ 2 năm đến 3 năm học đối với văn bằng 2; từ 1,5 năm đến 2,5 năm học đối với liên thông.  \nb) Thời gian đào tạo văn bằng 1, liên thông, văn bằng 2 được xác định trên cơ sở học  \nphần và khối lượng tích lũy quy định cho từng chương trình;  \n2. Tùy theo khả năng học tập, sinh viên được kéo dài thời gian học tối đa 04 học kỳ chính."
+        ],
+        "chunk_ids": [
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-37",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-35",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-40",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-36",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-24"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Học bổng chương trình được cấp theo từng học kỳ, một học kỳ tính là 5.0 tháng.",
+        "expected_context": "Học bổng chương trình: học bổng được cấp cho sinh viên theo từng học kỳ – một học kỳ tính là 5.0 tháng. Mức học bổng hàng năm do Hiệu trưởng quyết định. Tất cả các sinh viên tài năng theo danh sách chính thức từng học kỳ đều được hưởng học bổng này.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.366656466211789,
+        "context_recall": 1.0,
+        "context_precision": 0.7499999999625
+      },
+      {
+        "question": "Điểm trung bình học kỳ được dùng để làm gì?",
+        "question_type": "confusable",
+        "answer": "Điểm trung bình học kỳ (ĐTBHK) được dùng để xét học bổng, khen thưởng và xử lý học vụ sau mỗi học kỳ. Điều này được quy định rõ trong Điều 24 của Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy [Document 1].",
+        "contexts": [
+          "## Điều 24. Cách quản lý điểm  \n1. Điểm trung bình học kỳ (ĐTBHK) là điểm trung bình của các học phần mà sinh viên đã đăng ký học trong học kỳ đó với trọng số là số tín chỉ của mỗi học phần (bao gồm cả những học phần không đạt). ĐTBHK được dùng để xét học bổng, khen thưởng, xử lý học vụ sau mỗi học kỳ.  \n2. Điểm trung bình chung (ĐTBC) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số tín chỉ của mỗi học phần (được tính theo điểm học phần cao nhất trong các lần học, bao gồm cả những học phần không đạt). ĐTBC được dùng để xét số tín chỉ được phép đăng ký trong học kỳ, học vượt, xét chuyển ngành/chương trình, xét điều kiện làm khóa luận tốt nghiệp.",
+          "Điều 24. Cách quản lý điểm\n3. Điểm trung bình chung tích lũy (ĐTBCTL) là điểm trung bình của các học phần mà sinh viên đã đăng ký học từ lúc bắt đầu khóa học đến thời điểm được tính với trọng số là số tín chỉ đã được tích lũy (đạt từ 5,0 điểm trở lên) của mỗi học phần (được tính theo điểm học phần cao nhất trong các lần học). ĐTBCTL được tính khi sinh viên đủ điều kiện tốt nghiệp, được dùng để phân loại kết quả học tập và xếp hạng tốt nghiệp.  \n4. Cách tính ĐTBHK, ĐTBC, ĐTBCTL được quy định tại Điều 26 của Quy chế này.  \n5. Kết quả học tập của học kỳ hè (nếu có) được tính chung vào học kỳ liền kề trước đó.  \nTrang 20/27  \n6. Học phần có kết quả từ 5,0 điểm trở lên được bảo lưu khi sinh viên học thêm một ngành  \nhọc mới trong Trường. Điểm bảo lưu được tính vào ĐTBC, ĐTBCTL.",
+          "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa\n(gồm các điểm được cho trong quá trình học như điểm bài tập, thuyết trình, chuyên cần, …).\nTỉ lệ các thành phần điểm và các hình thức đánh giá của mỗi thành phần điểm được ghi rõ trong Đề cương môn học. Điểm thành phần được làm tròn đến 0,5. Cán bộ giảng dạy có trách nhiệm thông báo rộng rãi đến sinh viên trong tuần đầu tiên của học kỳ về cách đánh giá môn học. Điểm học phần là điểm trung bình tính theo hệ số của các điềm thành phần, tính theo thang điểm 10 và được làm tròn đến 0,1.",
+          "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa\n1,5  \n3,0 đến cận 4,0 Từ 30 đến cận 40  \n1,0  \nKhông đạt  \nA+  \nA  \nB+  \nB  \nC  \nD+  \nD  \nXuất sắc  \nGiỏi  \nKhá  \nTrung bình khá  \nTrung bình  \nYếu  \nKém  \nTrang 18/27  \n< 3,0  \nDưới 30  \n0,0  \nF  \n2. Điểm cuối cùng để đánh giá một học phần được gọi là điểm học phần. Điểm học phần được đánh giá dựa trên kết quả học tập toàn diện của sinh viên trong suốt học kỳ đối với học phần đó. Mỗi môn học có tối đa 4 điểm thành phần: Cuối kỳ (bắt buộc phải có), Giữa kỳ,\nThực hành (bắt buộc phải có đối với những môn học có tín chỉ thực hành) và Quá trình\n(gồm các điểm được cho trong quá trình học như điểm bài tập, thuyết trình, chuyên cần, …).",
+          "Điều 13. Văn bằng, chứng chỉ, chứng nhận được sử dụng để công nhận đạt chuẩn xét tốt nghiệp\n| | | | | Cambridge English | | | Bậc 4 (điểm |\nCTTT,\n| | 675 | 225 | 4,5 | 6,0 Scale từ 168 điểm | | 281 | trung bình từ |\n| --- | ---- | ---- | ---- | ----------------------- | --- | ---- | -------------- |\nCTA\n| | | | | | trở lên | | 7 đến 8) |\n| --- | --- | --- | --- | --- | -------- | --- | --------- |  \nBảng 6. Chứng chỉ tiếng Pháp, tiếng Nhật dùng để xét công nhận tốt nghiệp\nChứng chỉ\n| | | | Tiếng Pháp | | | Tiếng Nhật | |\n| --- | --- | --- | ----------- | --- | --- | ----------- | --- |\nChương trình\nVB2, LT, CTC\n| | | DELF B1 hoặc TCF Niveau 3 | | | JLPT N4 hoặc NAT-TEST N4 | | |\n| ------------ | --- | -------------------------- | --- | --- | -------------------------- | --- | --- |"
+        ],
+        "chunk_ids": [
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-81",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-82",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-73",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-72",
+          "legal/956-2026-quy-che-dao-tao-ngoai-ngu.md::chunk-42"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "ĐTBHK được dùng để xét học bổng, khen thưởng và xử lý học vụ. Đây là điểm trung bình của các học phần sinh viên đã đăng ký trong học kỳ với trọng số là số tín chỉ của mỗi học phần, bao gồm cả học phần không đạt.",
+        "expected_context": "Điểm trung bình học kỳ (ĐTBHK) là điểm trung bình của các học phần mà sinh viên đã đăng ký học trong học kỳ đó với trọng số là số tín chỉ của mỗi học phần (bao gồm cả những học phần không đạt). ĐTBHK được dùng để xét học bổng, khen thưởng.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5009122351566172,
+        "context_recall": 1.0,
+        "context_precision": 0.999999999975
+      },
+      {
+        "question": "Sinh viên cần đáp ứng điều kiện gì để được cấp bằng Cử nhân Tài năng?",
+        "question_type": "confusable",
+        "answer": "Để được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường Đại học Công nghệ Thông tin (UIT), sinh viên cần đáp ứng các điều kiện sau đây:\n\n1. Sinh viên phải đang là sinh viên chính thức của Chương trình Tài năng (CTTN).\n2. Sinh viên phải hoàn tất chương trình đúng hạn và đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng. Nếu sinh viên đã bảo vệ khóa luận tốt nghiệp (KLTN) đúng hạn nhưng chưa đạt chuẩn 11 đầu ra ngoại ngữ, Khoa có thể xem xét hoàn cảnh cụ thể để đề nghị Ban Đào tạo (BĐH) và trình Ban Giám hiệu (BGH) phê duyệt cho phép gia hạn tối đa 1 học kỳ để hoàn tất chương trình đào tạo (CTĐT) và được cấp bằng CTTN.\n3. Sinh viên cần có điểm KLTN từ 7.5 trở lên, điểm ĐTBTL từ 7.5 trở lên và điểm rèn luyện từ loại Khá trở lên.\n4. Sinh viên phải có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định [Document 1].",
+        "contexts": [
+          "## Điều 12. Tốt nghiệp Chương trình Tài năng\nSinh viên được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường\nĐHCNTT – ĐHQG HCM khi đạt các điều kiện được xét tốt nghiệp như sau:\n− Đang là sinh viên chính thức của CTTN.\n− Hoàn tất chương trình đúng hạn – đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng. Nếu sinh viên đã bảo vệ KLTN đúng hạn nhưng chưa đạt chuẩn  \n11 đầu ra ngoại ngữ, Khoa có thể xem xét hoàn cảnh cụ thể để đề nghị BĐH và trình\nBGH phê duyệt cho phép gia hạn tối đa 1 học kỳ để hoàn tất CTĐT và được cấp bằng CTTN.\n− Có điểm KLTN  7.5, ĐTBTL  7.5 và điểm rèn luyện từ loại Khá trở lên.\n− Có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định.",
+          "# TUYỂN SINH SINH VIÊN TÀI NĂNG NĂM 2026\n21/08/2026 - 10:23\nChương trình Tuyển chọn và Phát triển Sinh viên Tài năng trình độ đại học năm 2026 chính thức nhận hồ sơ đăng ký dành cho tân sinh viên UIT khóa 2026.\nChương trình được thiết kế với nội dung đào tạo có nền tảng rộng, chuyên sâu, chú trọng phát triển tư duy sáng tạo, niềm đam mê học thuật và khả năng nghiên cứu. Sinh viên được định hướng tham gia nghiên cứu khoa học, học tập cùng đội ngũ giảng viên giàu kinh nghiệm, được ưu tiên về cơ sở vật chất và có cơ hội nhận học bổng hàng tháng. Khi tốt nghiệp, sinh viên được cấp bằng “Cử nhân tài năng” (Honors Program) của Trường Đại học Công nghệ Thông tin – ĐHQG-HCM.\nNGÀNH ĐÀO TẠO – CHỈ TIÊU\n• Khoa học Máy tính: tối đa 30 sinh viên",
+          "## Điều 33. Điều kiện xét tốt nghiệp và công nhận tốt nghiệp  \n1. Mỗi năm Trường có 4 đợt xét tốt nghiệp và cấp bằng tốt nghiệp đại học, lịch xét tốt nghiệp được ghi trong kế hoạch năm học. Để được Trường xét cấp bằng tốt nghiệp, sinh viên nộp hồ sơ đề nghị xét tốt nghiệp khi đã đáp ứng đủ các điều kiện sau đây:  \n- Cho đến thời điểm xét tốt nghiệp, sinh viên không đang trong thời gian bị truy cứu  \ntrách nhiệm hình sự hoặc bị kỷ luật từ mức đình chỉ học tập trở lên.  \n- Đã hoàn thành nghĩa vụ học phí.\n- Đã hoàn thành các môn học, tích lũy đủ số tín chỉ theo đúng chương trình đào tạo.\n- Đã hoàn thành các môn học Giáo dục thể chất.\n- Có chứng chỉ Giáo dục quốc phòng-An ninh.\n- Đạt chuẩn ngoại ngữ xét tốt nghiệp.",
+          "Điều 12. Tốt nghiệp Chương trình Tài năng\n− Có trình độ Anh văn đạt chuẩn đầu ra của CTTN do Trường quy định.\nCác sinh viên không đạt một trong các điều kiện nêu trên nhận bằng tốt nghiệp như sinh viên chương trình chuẩn khi đã đạt đủ các điều kiện được quy định trong quy chế đào tạo theo học chế tín chỉ của Trường; đồng thời sinh viên phải hoàn trả toàn bộ học bổng đã nhận theo Điều 13 của quy định này.",
+          "## Điều 2. Giải thích từ ngữ\n− Sinh viên thuộc CTTN có 02 hình thức là chính thức và dự bị, nằm trong tổng chỉ tiêu của chương trình:\n▪ Sinh viên thuộc hình thức chính thức: sau đây được gọi là sinh viên chính thức, sinh viên phải đáp ứng các tiêu chuẩn theo yêu cầu và được hưởng đầy đủ các quyền lợi của chương trình, đây cũng là điều kiện tiên quyết để sinh viên được nhận bằng tốt nghiệp tài năng."
+        ],
+        "chunk_ids": [
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-35",
+          "news/tuyen-sinh-sinh-vien-tai-nang-nam-2026.md::chunk-0",
+          "legal/790-2022-quy-che-dao-tao-tin-chi.md::chunk-103",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-36",
+          "legal/1032-2025-quy-dinh-chuong-trinh-tai-nang.md::chunk-8"
+        ],
+        "retrieval_method": "hybrid",
+        "reference": "Sinh viên phải đang là sinh viên chính thức của chương trình tài năng và hoàn tất chương trình đúng hạn, đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng.",
+        "expected_context": "Sinh viên được cấp bằng \"Cử nhân Tài năng\" (Honors Program) của Trường ĐHCNTT – ĐHQG HCM khi đạt các điều kiện được xét tốt nghiệp như sau: − Đang là sinh viên chính thức của CTTN. − Hoàn tất chương trình đúng hạn – đủ điều kiện để được cấp bằng theo đúng ngành học tương ứng.",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.27127731190995996,
+        "context_recall": 1.0,
+        "context_precision": 0.6999999999766667
+      }
+    ]
+  }
+}
