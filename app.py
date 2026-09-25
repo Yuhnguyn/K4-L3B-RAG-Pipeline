@@ -4,6 +4,7 @@ from pathlib import Path
 import streamlit as st
 from dotenv import load_dotenv
 
+from src.conversation_memory import condense_question
 from src.task10_generation import (
     LLM_PROVIDER,
     generate_with_citation,
@@ -481,15 +482,22 @@ if not query and "pending" in st.session_state:
     query = st.session_state.pop("pending")
 
 if query:
+    # Conversation memory: viết lại follow-up thành câu hỏi độc lập TRƯỚC khi
+    # thêm câu hỏi hiện tại vào lịch sử, để câu hỏi không tự tham chiếu chính nó.
+    history = list(st.session_state.messages)
+    standalone_query = condense_question(history, query)
+
     st.session_state.messages.append({"role": "user", "content": query})
 
     with st.chat_message("user", avatar=AVATAR_USER):
         st.markdown(query)
 
     with st.chat_message("assistant", avatar=AVATAR_BOT):
+        if standalone_query.strip() and standalone_query.strip() != query.strip():
+            st.caption(f"Đã hiểu câu hỏi nối tiếp là: {standalone_query}")
         with st.spinner("Đang truy xuất văn bản và tạo câu trả lời..."):
             try:
-                result = generate_with_citation(query, top_k=top_k)
+                result = generate_with_citation(standalone_query, top_k=top_k)
             except Exception as error:
                 # Giao diện không được crash vì lỗi backend.
                 result = {

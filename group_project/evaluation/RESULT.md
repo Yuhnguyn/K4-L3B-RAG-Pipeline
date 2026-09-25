@@ -38,7 +38,7 @@ tại `data/standardized/` (6 văn bản quy chế UIT + 7 bài viết, 208.766 
 | `CHUNK_SIZE`        | 500             | **800**           |
 | `CHUNK_OVERLAP`     | 50              | **120**           |
 | `CHUNKING_METHOD`   | `recursive`     | **`markdown_header + recursive`** |
-| Số chunk tạo ra     | ~463 (ước lượng) | **422**          |
+| Số chunk tạo ra     | ~463 (ước lượng) | **396**          |
 
 **Vì sao 800 thay vì 500.** Đơn vị ngữ nghĩa của văn bản pháp quy là một "Điều".
 Corpus có 156 Điều với phân phối độ dài:
@@ -94,7 +94,7 @@ gọi sẽ làm mỗi truy vấn ở Task 5 mất vài giây.
 ### Chống trùng lặp khi index lại
 
 `collection.upsert()` ghi đè các ID trùng nhưng **không** xóa ID cũ không còn xuất hiện.
-Hệ quả: nếu đổi `CHUNK_SIZE` từ 500 lên 800, số chunk giảm từ khoảng 463 xuống 422, và
+Hệ quả: nếu đổi `CHUNK_SIZE` từ 500 lên 800, số chunk giảm từ khoảng 463 xuống 396, và
 khoảng 40 chunk cũ có `chunk_index` cao vẫn nằm lại trong ChromaDB. Chúng trở thành dữ
 liệu mồ côi được sinh bởi một cấu hình chunking đã bị thay thế, nhưng vẫn được search trả
 về và vẫn đi vào ngữ cảnh của LLM.

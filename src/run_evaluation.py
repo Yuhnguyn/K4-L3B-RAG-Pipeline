@@ -23,6 +23,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from .task10_generation import (
+    LLM_PROVIDER,
     SYSTEM_PROMPT,
     TOP_K,
     call_llm,
@@ -85,12 +86,99 @@ def run_config(cases: list[dict], use_reranking: bool) -> list[dict]:
     return records
 
 
+def build_evaluator_llm():
+    """LLM giám khảo theo ``LLM_PROVIDER``.
+
+    Nhánh ``openai`` tôn trọng ``OPENAI_BASE_URL`` nên dùng được endpoint
+    OpenAI-compatible (ví dụ Command Code Provider API).
+    """
+    from ragas.llms import LangchainLLMWrapper
+
+    if LLM_PROVIDER == "openai":
+        from langchain_openai import ChatOpenAI
+
+        kwargs: dict = {"model": resolve_model(), "temperature": 0.0}
+        base_url = (
+            os.getenv("OPENAI_BASE_URL", "").strip()
+            or os.getenv("OPENAI_API_BASE", "").strip()
+        )
+        if base_url:
+            kwargs["base_url"] = base_url
+            kwargs["api_key"] = os.getenv("OPENAI_API_KEY", "").strip() or None
+        return LangchainLLMWrapper(ChatOpenAI(**kwargs))
+
+    if LLM_PROVIDER == "gemini":
+        try:
+            from langchain_google_genai import ChatGoogleGenerativeAI
+        except ImportError as error:
+            raise RuntimeError(
+                "Cần 'langchain-google-genai' để chấm bằng Gemini: "
+                "pip install langchain-google-genai"
+            ) from error
+
+        api_key = os.getenv("GEMINI_API_KEY", "").strip()
+        if not api_key:
+            raise RuntimeError("GEMINI_API_KEY chưa được đặt trong .env")
+        return LangchainLLMWrapper(
+            ChatGoogleGenerativeAI(
+                model=resolve_model(),
+                temperature=0.0,
+                google_api_key=api_key,
+            )
+        )
+
+    raise ValueError(
+        f"LLM_PROVIDER={LLM_PROVIDER} không được hỗ trợ cho evaluator"
+    )
+
+
+def build_evaluator_embeddings():
+    """Embedding cho RAGAS, chọn bằng ``EVALUATOR_EMBEDDING_PROVIDER``.
+
+    - ``openai`` (mặc định): ``text-embedding-3-small``.
+    - ``sentence_transformers``: chạy cục bộ ``BAAI/bge-m3``. Dùng khi LLM chạy
+      qua endpoint OpenAI-compatible không có endpoint embeddings (ví dụ
+      Command Code Provider API).
+    """
+    from ragas.embeddings import LangchainEmbeddingsWrapper
+
+    provider = os.getenv("EVALUATOR_EMBEDDING_PROVIDER", "openai").strip()
+
+    if provider == "openai":
+        from langchain_openai import OpenAIEmbeddings
+
+        return LangchainEmbeddingsWrapper(
+            OpenAIEmbeddings(model="text-embedding-3-small")
+        )
+
+    if provider in {"sentence_transformers", "local", "huggingface"}:
+        try:
+            from langchain_huggingface import HuggingFaceEmbeddings
+        except ImportError as error:
+            raise RuntimeError(
+                "Cần 'langchain-huggingface' để chấm embedding cục bộ: "
+                "pip install langchain-huggingface"
+            ) from error
+        return LangchainEmbeddingsWrapper(
+            HuggingFaceEmbeddings(
+                model_name=EMBEDDING_MODEL,
+                encode_kwargs={"normalize_embeddings": True},
+            )
+        )
+
+    raise ValueError(
+        f"EVALUATOR_EMBEDDING_PROVIDER={provider} không được hỗ trợ"
+    )
+
+
+def build_evaluator():
+    """Trả ``(llm, embeddings)`` cho RAGAS."""
+    return build_evaluator_llm(), build_evaluator_embeddings()
+
+
 def score_with_ragas(records: list[dict]) -> dict:
     """Chấm 4 metric bằng RAGAS, dùng cùng evaluator cho cả hai config."""
-    from langchain_openai import ChatOpenAI, OpenAIEmbeddings
     from ragas import EvaluationDataset, evaluate
-    from ragas.llms import LangchainLLMWrapper
-    from ragas.embeddings import LangchainEmbeddingsWrapper
     from ragas.metrics import (
         Faithfulness,
         ResponseRelevancy,
@@ -98,12 +186,7 @@ def score_with_ragas(records: list[dict]) -> dict:
         LLMContextPrecisionWithReference,
     )
 
-    evaluator_llm = LangchainLLMWrapper(
-        ChatOpenAI(model=resolve_model(), temperature=0.0)
-    )
-    evaluator_embeddings = LangchainEmbeddingsWrapper(
-        OpenAIEmbeddings(model="text-embedding-3-small")
-    )
+    evaluator_llm, evaluator_embeddings = build_evaluator()
 
     dataset = EvaluationDataset.from_list([
         {

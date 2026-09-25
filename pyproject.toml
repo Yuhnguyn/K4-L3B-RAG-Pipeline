@@ -16,6 +16,8 @@ dependencies = [
     "fpdf2>=2.7.0,<3",
     "google-genai>=1.0.0,<3",
     "langchain-community==0.4.1",
+    "langchain-google-genai>=2.0.0,<4",
+    "langchain-huggingface>=0.1.0,<2",
     "langchain-openai>=1.6.2,<2",
     "langchain-text-splitters>=1.1.2,<2",
     "markitdown[pdf]>=0.1.0,<0.2",

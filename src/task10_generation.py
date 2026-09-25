@@ -117,6 +117,23 @@ def _require_key(name: str) -> str:
     return key
 
 
+def openai_client_kwargs() -> dict:
+    """Tham số khởi tạo ``OpenAI`` client, có hỗ trợ endpoint tùy biến.
+
+    ``OPENAI_BASE_URL`` cho phép trỏ sang endpoint OpenAI-compatible khác, ví dụ
+    Command Code Provider API (``https://api.commandcode.ai/provider/v1``). Bỏ
+    trống thì dùng ``api.openai.com`` mặc định.
+    """
+    kwargs: dict = {
+        "api_key": _require_key("OPENAI_API_KEY"),
+        "timeout": REQUEST_TIMEOUT,
+    }
+    base_url = os.getenv("OPENAI_BASE_URL", "").strip()
+    if base_url:
+        kwargs["base_url"] = base_url
+    return kwargs
+
+
 def call_llm(system_prompt: str, user_message: str) -> str:
     """Gọi OpenAI, Gemini hoặc Anthropic theo cấu hình. Trả về text thuần."""
     model = resolve_model()
@@ -124,7 +141,7 @@ def call_llm(system_prompt: str, user_message: str) -> str:
     if LLM_PROVIDER == "openai":
         from openai import OpenAI
 
-        client = OpenAI(api_key=_require_key("OPENAI_API_KEY"), timeout=REQUEST_TIMEOUT)
+        client = OpenAI(**openai_client_kwargs())
         response = client.chat.completions.create(
             model=model,
             messages=[

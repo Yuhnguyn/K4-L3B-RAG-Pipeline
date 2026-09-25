@@ -19,6 +19,7 @@ from pathlib import Path
 import yaml
 
 from .contracts import validate_document
+from .glossary import expand_for_indexing
 
 
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
@@ -179,6 +180,9 @@ def chunk_documents(documents: list[dict]) -> list[dict]:
                 if not body:
                     continue
                 content = f"{prefix}{body}" if position else body
+                # Chèn dạng đầy đủ của viết tắt có trong chunk (Recommendation #1
+                # trong RESULT.md). Phần thân giữ nguyên văn; chú thích nằm ở cuối.
+                content = expand_for_indexing(content)
                 chunks.append(
                     {
                         "id": f"{document['id']}::chunk-{index}",
